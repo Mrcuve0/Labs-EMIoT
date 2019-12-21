@@ -1,0 +1,22 @@
+To_idle= 105.000000
+To_sleep= 0.000000
+[psm] State Run: power = 400.00mW
+[psm] State Idle: power = 50.00mW
+[psm] State Sleep: power = 0.16mW
+[psm] Run -> Idle transition: energy  = 10uJ, time = 10us
+[psm] Run -> Sleep transition: energy  = 10uJ, time = 90us
+[psm] Idle -> Run transition: energy  = 10uJ, time = 10us
+[psm] Sleep -> Run transition: energy  = 30uJ, time = 160us
+
+[sim] Active time in profile = 1.250748s 
+[sim] Idle time in profile = 0.498467s
+[sim] Total time = 1.749215s
+[sim] Timeout waiting time = 0.421739s
+[sim] Total time in state Run = 1.672487s
+[sim] Total time in state Idle = 0.076728s
+[sim] Total time in state Sleep = 0.000000s
+[sim] Time overhead for transition = 0.041930s
+[sim] N. of transitions = 4193
+[sim] Energy for transitions = 0.041930J
+[sim] Energy w/o DPM = 0.699686J, Energy w DPM = 0.714761J
+[sim] -2.2 percent of energy saved.
