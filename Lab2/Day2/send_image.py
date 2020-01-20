@@ -8,8 +8,8 @@ def int_to_bin(x, length=1):
     return x.to_bytes(length, byteorder='big')
 
 ser = serial.Serial()
-ser.port = "/dev/tty.usbserial-1410"
-ser.baudrate = 115200
+ser.port = "/dev/ttyACM0"
+ser.baudrate = 9600
 ser.bytesize = serial.EIGHTBITS
 ser.parity = serial.PARITY_NONE
 ser.stopbits = serial.STOPBITS_ONE
