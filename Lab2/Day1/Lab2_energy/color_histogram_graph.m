@@ -1,4 +1,5 @@
 function color_histogram_graph(I, RGB, index)
+
     HIST_IN = zeros([256 3]);
     HIST_OUT = zeros([256 3]);
 

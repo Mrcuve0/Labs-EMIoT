@@ -75,6 +75,36 @@ function overallEnergySavings(collection_power_savings, eucl, ssim, mode)
             
             saveas(gcf, "./Results/HistEqualization/bmp/EnergySavingsPerImage.bmp");
             saveas(gcf, "./Results/HistEqualization/svg/EnergySavingsPerImage.svg");
+            
+        case 2
+            Y = [];
+            x_axis = linspace(1, 15, 15);
+            figure
+
+            for iterations = 1:10
+
+                for i = 1:15
+                    Y(i) = collection_power_savings{iterations}{i};
+                end
+                
+                hold on
+                plot(x_axis, Y, '-o', 'DisplayName', int2str(iterations*10) + "%");
+                xticks(1:1:15)
+                xlim([1 15])
+                title('Energy Savings w/ different Luminance Reduction intensity');
+                xlabel('Image #');
+                ylabel('Energy Savings w.r.t. Original Image -- (%)');
+                lgd = legend;
+                lgd.Title.String = "Luminance Reduction %";
+                % legend(int2str(iterations*10) + "%")
+                hold off
+
+            end
+
+            legend("10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%");
+
+            saveas(gcf, "./Results/LuminanceReduction/bmp/EnergySavingsPerImage.bmp");
+            saveas(gcf, "./Results/LuminanceReduction/svg/EnergySavingsPerImage.svg");
         
         otherwise
 
