@@ -15,7 +15,7 @@
 /** number of timeouts for timeout-based policies */
 #define DPM_N_TIMEOUTS 2
 /** history window size for history-based policies */
-#define DPM_HIST_WIND_SIZE 5
+#define DPM_HIST_WIND_SIZE 3
 /** number of thresholds for history-based policies */
 #define DPM_N_THRESHOLDS 2
 /** @} */
@@ -36,7 +36,8 @@ typedef int dpm_policy_t;
 /**
  * @brief Container for timeout policy parameters (can store more than 1 timeout)
  */
-typedef struct {
+typedef struct
+{
     double timeout[DPM_N_TIMEOUTS]; /**< array of timeouts */
 } dpm_timeout_params;
 
@@ -44,8 +45,9 @@ typedef struct {
  * @brief Container for history policy parameters
  *
  */
-typedef struct {
-    double alpha[DPM_HIST_WIND_SIZE]; /**< regression model coefficients */
+typedef struct
+{
+    double alpha[DPM_HIST_WIND_SIZE];   /**< regression model coefficients */
     double threshold[DPM_N_THRESHOLDS]; /**< thresholds on the predicted time that trigger a state transition */
 } dpm_history_params;
 
@@ -61,8 +63,7 @@ typedef struct {
  * @return 1 on success, 0 on failure
  *
  */
-int dpm_simulate(psm_t psm, dpm_policy_t sel_policy, dpm_timeout_params
-        tparams, dpm_history_params hparams, char* fwl);
+int dpm_simulate(psm_t psm, dpm_policy_t sel_policy, dpm_timeout_params tparams, dpm_history_params hparams, char *fwl);
 
 /**
  * @brief Decide the next PSM state according to a given DPM policy
@@ -80,8 +81,8 @@ int dpm_simulate(psm_t psm, dpm_policy_t sel_policy, dpm_timeout_params
  *
  */
 int dpm_decide_state(psm_state_t *next_state, psm_time_t curr_time,
-        psm_interval_t idle_period, psm_time_t *history, dpm_policy_t policy,
-        dpm_timeout_params tparams, dpm_history_params hparams);
+                     psm_interval_t idle_period, psm_time_t *history, dpm_policy_t policy,
+                     dpm_timeout_params tparams, dpm_history_params hparams);
 
 /**
  * @brief Initialize the history of previous idle times at the beginning of a simulation

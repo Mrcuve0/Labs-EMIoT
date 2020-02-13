@@ -1,4 +1,6 @@
 #include "inc/dpm_policies.h"
+#include <stdio.h>
+#include <math.h>
 
 int dpm_simulate(psm_t psm, dpm_policy_t sel_policy, dpm_timeout_params tparams, dpm_history_params hparams, char *fwl)
 {
@@ -106,33 +108,19 @@ int dpm_decide_state(psm_state_t *next_state, psm_time_t curr_time,
                      dpm_timeout_params tparams, dpm_history_params hparams)
 {
 
-    double value_prediction = 0;
+    double value_prediction;
+    // hparams.alpha[0] = 3.55e-06;
+    // hparams.alpha[1] = 0.9935;
+    // hparams.alpha[2] = 63.718;
 
     switch (policy)
     {
 
     case DPM_TIMEOUT:
-        // if ((curr_time > idle_period.start + tparams.timeout[0]) && (curr_time < idle_period.start + tparams.timeout[0] + tparams.timeout[1])) {
-        //     *next_state = PSM_STATE_IDLE;
-        // } else if (curr_time > idle_period.start + tparams.timeout[0] + tparams.timeout[1] && tparams.timeout[1] != 0) {
-        //     *next_state = PSM_STATE_SLEEP;
-        // } else {
-        //     *next_state = PSM_STATE_ACTIVE;
-        // }
-        // break;
 
         // ORIGINAL
         // if(curr_time > idle_period.start + tparams.timeout[0]) {
         //     *next_state = PSM_STATE_IDLE;
-        // } else {
-        //     *next_state = PSM_STATE_ACTIVE;
-        // }
-
-        // PREV VERSION (USED BEFORE 01-12-2019)
-        // if (curr_time > idle_period.start + tparams.timeout[0]) {
-        //     *next_state = PSM_STATE_IDLE;
-        //     if ((tparams.timeout[1] != 0) && (curr_time > idle_period.start + tparams.timeout[1]))
-        //         *next_state = PSM_STATE_SLEEP;
         // } else {
         //     *next_state = PSM_STATE_ACTIVE;
         // }
@@ -163,19 +151,32 @@ int dpm_decide_state(psm_state_t *next_state, psm_time_t curr_time,
         else
         {
             *next_state = PSM_STATE_ACTIVE;
-            // LAB 3 EDIT
-            // double alpha[DPM_HIST_WIND_SIZE == 5]; /**< regression model coefficients */
-            // double threshold[DPM_N_THRESHOLDS == 2]; /**< thresholds on the predicted time that trigger a state transition */
-            // thresholds should be equal to the two TBE
-            // history has space for 5 values (can be changed), can contain the latest 5 idle values for example
-            // Tidle[i]= K0 + K1Tidle[i-1] + K2Tidle[i-1]² + K3Tactive[i] + K4Tidle[i-1]Tactive[i] + K5Tactive[i]²
-            // K0 ...K5 = coefficients (determined empirically) (polyfit function)
+            /* LAB 3 EDIT
+            double alpha[DPM_HIST_WIND_SIZE == 3]; <-- regression model coefficients
+            double threshold[DPM_N_THRESHOLDS == 2]; 
+            <-- thresholds on the predicted time that trigger a state transition 
+            
+            Thresholds should be equal to the two TBE
+            history has space for 5 values (can be changed), can contain the latest 5 idle values for example
+            Tidle[i]= K0 + K1Tidle[i-1] + K2Tidle[i-1]² + K3Tactive[i] + K4Tidle[i-1]Tactive[i] + K5Tactive[i]²
+            K0 ...K5 = coefficients (determined empirically) (polyfit function)
+
+            If the Tidle computed using the regression model is greater than one (or both) the thresholds,
+            then we enter the corresponding sleep state.
+
+            Tidle[i] = K1Tidle[i-1]² + K2Tidle[i-2] + K3
+            */
+
+            value_prediction = hparams.alpha[0] * pow(history[2], 2) + hparams.alpha[1] * history[1] + hparams.alpha[2];
+            // history[0] = history[1];
+            // history[1] = history[2];
+            // history[0] = value_prediction;
 
             // hparams.alpha[i] * history[i] ....
-            if (value_prediction >= hparams.threshold[0])
+            if (value_prediction >= (double)hparams.threshold[0])
             {
                 *next_state = PSM_STATE_IDLE;
-                if ((value_prediction >= hparams.threshold[0]) && (value_prediction >= hparams.threshold[1]))
+                if ((value_prediction >= (double)hparams.threshold[0]) && (value_prediction >= (double)hparams.threshold[1]) && (hparams.threshold[1] > hparams.threshold[0]))
                 {
                     *next_state = PSM_STATE_SLEEP;
                 }

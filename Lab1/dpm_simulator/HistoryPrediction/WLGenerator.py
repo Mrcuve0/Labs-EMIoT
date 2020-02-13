@@ -82,10 +82,22 @@ def main(case, lines):
     listVal = []
     num2 = 0
 
+    unifMiddleActive = 250
+    unifMiddle = 50
+    unifMiddle_2 = 200
+
     for i in range(0, int(lines), 2):
 
         # ACTIVE
-        num1 = uniformCorrelated(1, 500)
+        if i >= 2:
+            if (num1 - unifMiddleActive >= 0):
+                num1 = uniformCorrelated(num1 - unifMiddleActive, 2 * unifMiddleActive + (num1 - unifMiddleActive))
+            else:
+                num1 = uniformCorrelated(num1 - unifMiddleActive, 2 * unifMiddleActive - (unifMiddleActive - num1))
+            if (num1 < 0):
+                num1 = -num1;
+        else:
+            num1 = uniformCorrelated(1, 500)
         listVal.append(num1)
         listValActive.append(num1)
         if i >= 1:
@@ -97,14 +109,24 @@ def main(case, lines):
         if (case == "1"):
             # IDLE Case #1
             if i >= 2:
-                num2 = uniformCorrelated(num2, num2 + 100)
+                if (num2 - unifMiddle >= 0):
+                    num2 = uniformCorrelated(num2 - unifMiddle, 2 * unifMiddle + (num2 - unifMiddle))
+                else:
+                    num2 = uniformCorrelated(num2 - unifMiddle, 2 * unifMiddle - (unifMiddle - num2))
+                if (num2 < 0):
+                    num2 = -num2;
             else:
                 num2 = uniformCorrelated(1, 100)
 
         if (case == "2"):
             # IDLE Case #2
             if i >= 2:
-                num2 = uniformCorrelated(num2, num2 + 400)
+                if (num2 - unifMiddle >= 0):
+                    num2 = uniformCorrelated(num2 - unifMiddle_2, 2 * unifMiddle_2 + (num2 - unifMiddle_2))
+                else:
+                    num2 = uniformCorrelated(num2 - unifMiddle_2, 2 * unifMiddle_2 - (unifMiddle_2 - num2))
+                if (num2 < 0):
+                    num2 = -num2;
             else:
                 num2 = uniformCorrelated(1, 400)
 
@@ -115,8 +137,6 @@ def main(case, lines):
                     num2 = gaussCorrelated(num2, 20)
                     if num2 > 0:
                         break
-                    else:
-                        num2 += 10
             else:
                 num2 = gaussCorrelated(100, 20)
 
@@ -124,11 +144,9 @@ def main(case, lines):
             # IDLE Case #4
             if i >= 2:
                 while True:
-                    num2 = exponentialCorrelated(num2)
+                    num2 = exponentialCorrelated(num2+1)
                     if num2 > 0:
                         break
-                    else:
-                        num2 += 50
             else:
                 num2 = exponentialCorrelated(50)
 
@@ -139,8 +157,6 @@ def main(case, lines):
                     num2 = trimodalCorrelated(num2 - 50, num2, num2 + 50, 10, 10, 10)
                     if num2 > 0:
                         break
-                    else:
-                        num2 += 10
             else:
                 num2 = trimodalCorrelated(50, 100, 150, 10, 10, 10)
 

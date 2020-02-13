@@ -1,6 +1,6 @@
 TARGET = dpm_simulator
 CC = gcc
-CFLAGS = -Wall -g
+CFLAGS = -Wall -g -lm
 INCDIR = "."
 
 .PHONY: default clean docs
