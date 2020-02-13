@@ -1,6 +1,6 @@
-hparams->alpha[0]: 0.000004
-hparams->alpha[1]: 0.993525
-hparams->alpha[2]: 63.718475
+hparams->alpha[0]: 0.000002
+hparams->alpha[1]: 0.994945
+hparams->alpha[2]: 3.652963
 hparams->threshold[0]: 50.000000
 hparams->threshold[1]: 165.000000
 [psm] State Run: power = 400.00mW
@@ -15,12 +15,12 @@ hparams->threshold[1]: 165.000000
 [sim] Active time in profile = 1.250748s 
 [sim] Idle time in profile = 0.498467s
 [sim] Total time = 1.749215s
-[sim] Timeout waiting time = 0.000000s
-[sim] Total time in state Run = 1.250748s
-[sim] Total time in state Idle = 0.258732s
-[sim] Total time in state Sleep = 0.239735s
-[sim] Time overhead for transition = 0.646930s
-[sim] N. of transitions = 9999
-[sim] Energy for transitions = 0.147550J
-[sim] Energy w/o DPM = 0.699686J, Energy w DPM = 0.660824J
-[sim] 5.6 percent of energy saved.
+[sim] Timeout waiting time = 0.060809s
+[sim] Total time in state Run = 1.311557s
+[sim] Total time in state Idle = 0.421595s
+[sim] Total time in state Sleep = 0.016063s
+[sim] Time overhead for transition = 0.123650s
+[sim] N. of transitions = 8731
+[sim] Energy for transitions = 0.090470J
+[sim] Energy w/o DPM = 0.699686J, Energy w DPM = 0.636175J
+[sim] 9.1 percent of energy saved.
