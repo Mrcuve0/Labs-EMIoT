@@ -5,14 +5,14 @@ import re
 import matplotlib.pyplot as plot
 
 def main(case, step, max_Tto):
-    
+
     val = []
     Tto_val = 0
     iterations = int(max_Tto/step)
     for i in range(0, iterations):
-        
+
         subprocess.call("../dpm_simulator -t " + str(Tto_val) + " -psm ../example/psm.txt -wl ../WLGenerator/Case\ " + str(case) + "/WL.txt > ../WLGenerator/Case\ " + str(case) + "/Timeout_Results/T_" + str(Tto_val) + "results.txt", shell=True)
-        
+
         fp = open("../WLGenerator/Case " + str(case) + "/Timeout_Results/T_" + str(Tto_val) + "results.txt", "r")
         for line in fp:
             # [sim] 9.1 percent of energy saved.
@@ -39,5 +39,5 @@ def main(case, step, max_Tto):
 if __name__ == "__main__":
     if (len(sys.argv) != 4):
         sys.exit("Erorr: plese use simLauncher <IDLE_CASE_#> <TIMEOUT_STEP> <MAX_TTO_VAL>")
-    
+
     main(int(sys.argv[1]), int(sys.argv[2]), int(sys.argv[3]))

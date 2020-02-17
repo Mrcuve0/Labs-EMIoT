@@ -15,9 +15,9 @@ def main(case, step, max_Tto, max_Tto_sleep):
     iterations = int(max_Tto_sleep/step)
     for i in range(0, iterations):
 
-        subprocess.call("../dpm_simulator -h " + str(k1) + " " + str(k2) + " " + str(k3) + " " + str(max_Tto) + " " + str(Tto_val) + " -psm ../example/psm_history.txt -wl ../HistoryPrediction/Correlated/Case\ " + str(case) + "/WL.txt > ../HistoryPrediction/Correlated/Case\ " + str(case) + "/predictionResults/T_" + str(Tto_val) + "results.txt", shell=True)
+        subprocess.call("../dpm_simulator -h " + str(k1) + " " + str(k2) + " " + str(k3) + " " + str(max_Tto) + " " + str(Tto_val) + " -psm ../example/psm_history.txt -wl ../HistoryPrediction/Uncorrelated/Case\ " + str(case) + "/WL.txt > ../HistoryPrediction/Uncorrelated/Case\ " + str(case) + "/predictionResults/T_" + str(Tto_val) + "results.txt", shell=True)
 
-        fp = open("../HistoryPrediction/Correlated/Case " + str(case) + "/predictionResults/T_" + str(Tto_val) + "results.txt", "r")
+        fp = open("../HistoryPrediction/Uncorrelated/Case " + str(case) + "/predictionResults/T_" + str(Tto_val) + "results.txt", "r")
         for line in fp:
             # [sim] 9.1 percent of energy saved.
             if re.match("\[sim\] ([+-]?[0-9]*[.]?[0-9]+) percent of energy saved\.", line):
@@ -37,8 +37,8 @@ def main(case, step, max_Tto, max_Tto_sleep):
     plot.xlabel('Tto_Sleep (microS)')
     plot.ylabel('Energy Saved (%)')
     plot.title('Energy Saved v. Timeout values - Tto fixed @ ' + str(max_Tto))
-    plot.savefig("../HistoryPrediction/Correlated/Case " + str(case) + "/predictionResults/percEnergySaved.svg")
-    plot.savefig("../HistoryPrediction/Correlated/Case " + str(case) + "/predictionResults/percEnergySaved.png")
+    plot.savefig("../HistoryPrediction/Uncorrelated/Case " + str(case) + "/predictionResults/percEnergySaved.svg")
+    plot.savefig("../HistoryPrediction/Uncorrelated/Case " + str(case) + "/predictionResults/percEnergySaved.png")
 
 
 if __name__ == "__main__":
