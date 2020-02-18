@@ -19,16 +19,21 @@
 \BOOKMARK [2][-]{subsection.3.3}{Case \0432: Timeout Policy w/ Idle + Sleep states PSM}{section.3}% 19
 \BOOKMARK [3][-]{subsubsection.3.3.1}{The PSM}{subsection.3.3}% 20
 \BOOKMARK [3][-]{subsubsection.3.3.2}{The modified dpm\137simulator}{subsection.3.3}% 21
-\BOOKMARK [3][-]{subsubsection.3.3.3}{Sweeping the Sleep Timout parameter - Python Script}{subsection.3.3}% 22
+\BOOKMARK [3][-]{subsubsection.3.3.3}{Sweeping the Sleep Timeout parameter - Python Script}{subsection.3.3}% 22
 \BOOKMARK [3][-]{subsubsection.3.3.4}{Workload profile \0431 - High Utilization}{subsection.3.3}% 23
 \BOOKMARK [3][-]{subsubsection.3.3.5}{Workload profile \0432 - Low Utilization}{subsection.3.3}% 24
 \BOOKMARK [3][-]{subsubsection.3.3.6}{Workload profile \0433 - Normal distribution of Idle periods}{subsection.3.3}% 25
 \BOOKMARK [3][-]{subsubsection.3.3.7}{Workload profile \0434 - Exponential distribution of Idle periods}{subsection.3.3}% 26
 \BOOKMARK [3][-]{subsubsection.3.3.8}{Workload profile \0435 - Tri-Modal distribution of Idle periods}{subsection.3.3}% 27
-\BOOKMARK [1][-]{section.4}{Part 2: The History Policy}{}% 28
+\BOOKMARK [1][-]{section.4}{Part 3: The History Policy}{}% 28
 \BOOKMARK [2][-]{subsection.4.1}{Introduction}{section.4}% 29
-\BOOKMARK [2][-]{subsection.4.2}{Case \0431: Timeout Policy w/ Idle state only PSM}{section.4}% 30
-\BOOKMARK [3][-]{subsubsection.4.2.1}{The PSM}{subsection.4.2}% 31
-\BOOKMARK [2][-]{subsection.4.3}{PWM wave generation}{section.4}% 32
-\BOOKMARK [2][-]{subsection.4.4}{LED color switching}{section.4}% 33
-\BOOKMARK [2][-]{subsection.4.5}{Flow Diagram for AcquireADCTask}{section.4}% 34
+\BOOKMARK [2][-]{subsection.4.2}{The PSM}{section.4}% 30
+\BOOKMARK [2][-]{subsection.4.3}{The modified dpm\137simulator}{section.4}% 31
+\BOOKMARK [2][-]{subsection.4.4}{The Correlated workload profiles}{section.4}% 32
+\BOOKMARK [3][-]{subsubsection.4.4.1}{Active Periods | Low Utilization | High Utilization}{subsection.4.4}% 33
+\BOOKMARK [3][-]{subsubsection.4.4.2}{Normal distribution | Exponential distribution | Tri-Modal distribution}{subsection.4.4}% 34
+\BOOKMARK [3][-]{subsubsection.4.4.3}{Scatter plots of the correlated workloads | Coefficients definition}{subsection.4.4}% 35
+\BOOKMARK [2][-]{subsection.4.5}{Sweeping the Sleep Prediction Threshold - Python Script}{section.4}% 36
+\BOOKMARK [3][-]{subsubsection.4.5.1}{Correlated Low Utilization - Profile \0432}{subsection.4.5}% 37
+\BOOKMARK [3][-]{subsubsection.4.5.2}{Correlated Exponential Distribution - Profile \0434}{subsection.4.5}% 38
+\BOOKMARK [2][-]{subsection.4.6}{Conclusions}{section.4}% 39

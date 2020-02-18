@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.2.8)  17 FEB 2020 21:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.2.8)  18 FEB 2020 22:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -661,7 +661,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 20.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 20.
-<PoliLogo.png, id=140, 1027.84pt x 1027.84pt>
+<PoliLogo.png, id=160, 1027.84pt x 1027.84pt>
 File: PoliLogo.png Graphic file (type png)
 <use PoliLogo.png>
 Package pdftex.def Info: PoliLogo.png  used on input line 28.
@@ -689,158 +689,168 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 41.
-<./screenshots/Active.png, id=190, 462.528pt x 346.896pt>
+<./screenshots/Active.png, id=216, 462.528pt x 346.896pt>
 File: ./screenshots/Active.png Graphic file (type png)
 <use ./screenshots/Active.png>
 Package pdftex.def Info: ./screenshots/Active.png  used on input line 62.
 (pdftex.def)             Requested size: 146.73235pt x 110.0509pt.
-<./screenshots/Idle1.png, id=191, 462.528pt x 346.896pt>
+<./screenshots/Idle1.png, id=217, 462.528pt x 346.896pt>
 File: ./screenshots/Idle1.png Graphic file (type png)
 <use ./screenshots/Idle1.png>
 Package pdftex.def Info: ./screenshots/Idle1.png  used on input line 72.
 (pdftex.def)             Requested size: 146.73235pt x 110.0509pt.
-<./screenshots/Idle2.png, id=192, 462.528pt x 346.896pt>
+<./screenshots/Idle2.png, id=218, 462.528pt x 346.896pt>
 File: ./screenshots/Idle2.png Graphic file (type png)
 <use ./screenshots/Idle2.png>
 Package pdftex.def Info: ./screenshots/Idle2.png  used on input line 82.
 (pdftex.def)             Requested size: 146.73235pt x 110.0509pt.
- [2 <./screenshots/Active.png> <./screenshots/Idle1.png>]
-<./screenshots/Idle3.png, id=205, 462.528pt x 346.896pt>
+<./screenshots/Idle3.png, id=219, 462.528pt x 346.896pt>
 File: ./screenshots/Idle3.png Graphic file (type png)
 <use ./screenshots/Idle3.png>
 Package pdftex.def Info: ./screenshots/Idle3.png  used on input line 93.
 (pdftex.def)             Requested size: 146.73235pt x 110.0509pt.
-<./screenshots/Idle4.png, id=206, 462.528pt x 346.896pt>
+<./screenshots/Idle4.png, id=220, 462.528pt x 346.896pt>
 File: ./screenshots/Idle4.png Graphic file (type png)
 <use ./screenshots/Idle4.png>
 Package pdftex.def Info: ./screenshots/Idle4.png  used on input line 103.
 (pdftex.def)             Requested size: 146.73235pt x 110.0509pt.
-<./screenshots/Idle5.png, id=207, 462.528pt x 346.896pt>
+ [2 <./screenshots/Active.png>] [3 <./screenshots/Idle1.png> <./screenshots/Idle2.png> <./screenshots/Idle3.png>]
+<./screenshots/Idle5.png, id=241, 462.528pt x 346.896pt>
 File: ./screenshots/Idle5.png Graphic file (type png)
 <use ./screenshots/Idle5.png>
 Package pdftex.def Info: ./screenshots/Idle5.png  used on input line 114.
 (pdftex.def)             Requested size: 146.73235pt x 110.0509pt.
- [3 <./screenshots/Idle2.png> <./screenshots/Idle3.png> <./screenshots/Idle4.png>]
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 137.
-<./screenshots/PSM_case1.png, id=219, 469.755pt x 301.8778pt>
+<./screenshots/PSM_case1.png, id=243, 469.755pt x 301.8778pt>
 File: ./screenshots/PSM_case1.png Graphic file (type png)
 <use ./screenshots/PSM_case1.png>
 Package pdftex.def Info: ./screenshots/PSM_case1.png  used on input line 143.
 (pdftex.def)             Requested size: 195.63815pt x 125.71915pt.
- [4 <./screenshots/Idle5.png> <./screenshots/PSM_case1.png (PNG copy)>]
+ [4 <./screenshots/Idle4.png> <./screenshots/Idle5.png>] [5 <./screenshots/PSM_case1.png (PNG copy)>]
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 196.
- [5]
-<./screenshots/Idle_case1.png, id=243, 462.528pt x 346.896pt>
+<./screenshots/Idle_case1.png, id=267, 462.528pt x 346.896pt>
 File: ./screenshots/Idle_case1.png Graphic file (type png)
 <use ./screenshots/Idle_case1.png>
 Package pdftex.def Info: ./screenshots/Idle_case1.png  used on input line 210.
-(pdftex.def)             Requested size: 293.4647pt x 220.10712pt.
+(pdftex.def)             Requested size: 244.55144pt x 183.41466pt.
  [6 <./screenshots/Idle_case1.png>]
-<./screenshots/Idle_case2.png, id=253, 462.528pt x 346.896pt>
+<./screenshots/Idle_case2.png, id=278, 462.528pt x 346.896pt>
 File: ./screenshots/Idle_case2.png Graphic file (type png)
 <use ./screenshots/Idle_case2.png>
 Package pdftex.def Info: ./screenshots/Idle_case2.png  used on input line 254.
-(pdftex.def)             Requested size: 293.4647pt x 220.10712pt.
- [7 <./screenshots/Idle_case2.png>]
-<./screenshots/Idle_case3.png, id=264, 462.528pt x 346.896pt>
+(pdftex.def)             Requested size: 244.55144pt x 183.41466pt.
+ [7]
+<./screenshots/Idle_case3.png, id=288, 462.528pt x 346.896pt>
 File: ./screenshots/Idle_case3.png Graphic file (type png)
 <use ./screenshots/Idle_case3.png>
 Package pdftex.def Info: ./screenshots/Idle_case3.png  used on input line 279.
-(pdftex.def)             Requested size: 293.4647pt x 220.10712pt.
-<./screenshots/Idle_case4.png, id=266, 462.528pt x 346.896pt>
+(pdftex.def)             Requested size: 244.55144pt x 183.41466pt.
+<./screenshots/Idle_case4.png, id=290, 462.528pt x 346.896pt>
 File: ./screenshots/Idle_case4.png Graphic file (type png)
 <use ./screenshots/Idle_case4.png>
 Package pdftex.def Info: ./screenshots/Idle_case4.png  used on input line 298.
-(pdftex.def)             Requested size: 293.4647pt x 220.10712pt.
- [8 <./screenshots/Idle_case3.png>]
-<./screenshots/Idle_case5.png, id=275, 462.528pt x 346.896pt>
+(pdftex.def)             Requested size: 244.55144pt x 183.41466pt.
+<./screenshots/Idle_case5.png, id=292, 462.528pt x 346.896pt>
 File: ./screenshots/Idle_case5.png Graphic file (type png)
 <use ./screenshots/Idle_case5.png>
 Package pdftex.def Info: ./screenshots/Idle_case5.png  used on input line 319.
-(pdftex.def)             Requested size: 293.4647pt x 220.10712pt.
-<./screenshots/PSM_case2.png, id=278, 541.27219pt x 339.51843pt>
-File: ./screenshots/PSM_case2.png Graphic file (type png)
-<use ./screenshots/PSM_case2.png>
-Package pdftex.def Info: ./screenshots/PSM_case2.png  used on input line 340.
-(pdftex.def)             Requested size: 171.18898pt x 107.37886pt.
- [9 <./screenshots/Idle_case4.png> <./screenshots/Idle_case5.png>]
-<./screenshots/PSM_case3.png, id=286, 422.57875pt x 355.3275pt>
+(pdftex.def)             Requested size: 244.55144pt x 183.41466pt.
+ [8 <./screenshots/Idle_case2.png>] [9 <./screenshots/Idle_case3.png> <./screenshots/Idle_case4.png>]
+<./screenshots/PSM_case3.png, id=307, 422.57875pt x 355.3275pt>
 File: ./screenshots/PSM_case3.png Graphic file (type png)
 <use ./screenshots/PSM_case3.png>
-Package pdftex.def Info: ./screenshots/PSM_case3.png  used on input line 349.
+Package pdftex.def Info: ./screenshots/PSM_case3.png  used on input line 340.
 (pdftex.def)             Requested size: 171.18898pt x 143.95021pt.
- [10 <./screenshots/PSM_case2.png (PNG copy)> <./screenshots/PSM_case3.png>]
-<./screenshots/Sleep_case1.png, id=298, 462.528pt x 346.896pt>
+ [10 <./screenshots/Idle_case5.png> <./screenshots/PSM_case3.png>]
+<./screenshots/Sleep_case1.png, id=318, 462.528pt x 346.896pt>
 File: ./screenshots/Sleep_case1.png Graphic file (type png)
 <use ./screenshots/Sleep_case1.png>
-Package pdftex.def Info: ./screenshots/Sleep_case1.png  used on input line 388.
-(pdftex.def)             Requested size: 293.4647pt x 220.10712pt.
-<./screenshots/Sleep_case2.png, id=301, 462.528pt x 346.896pt>
+Package pdftex.def Info: ./screenshots/Sleep_case1.png  used on input line 379.
+(pdftex.def)             Requested size: 244.55144pt x 183.41466pt.
+<./screenshots/Sleep_case2.png, id=321, 462.528pt x 346.896pt>
 File: ./screenshots/Sleep_case2.png Graphic file (type png)
 <use ./screenshots/Sleep_case2.png>
-Package pdftex.def Info: ./screenshots/Sleep_case2.png  used on input line 405.
-(pdftex.def)             Requested size: 293.4647pt x 220.10712pt.
-<./screenshots/Sleep_case3.png, id=302, 462.528pt x 346.896pt>
+Package pdftex.def Info: ./screenshots/Sleep_case2.png  used on input line 396.
+(pdftex.def)             Requested size: 244.55144pt x 183.41466pt.
+ [11]
+<./screenshots/Sleep_case3.png, id=328, 462.528pt x 346.896pt>
 File: ./screenshots/Sleep_case3.png Graphic file (type png)
 <use ./screenshots/Sleep_case3.png>
-Package pdftex.def Info: ./screenshots/Sleep_case3.png  used on input line 415.
-(pdftex.def)             Requested size: 293.4647pt x 220.10712pt.
-<./screenshots/Sleep_case4.png, id=303, 462.528pt x 346.896pt>
+Package pdftex.def Info: ./screenshots/Sleep_case3.png  used on input line 406.
+(pdftex.def)             Requested size: 244.55144pt x 183.41466pt.
+ [12 <./screenshots/Sleep_case1.png> <./screenshots/Sleep_case2.png>]
+<./screenshots/Sleep_case4.png, id=336, 462.528pt x 346.896pt>
 File: ./screenshots/Sleep_case4.png Graphic file (type png)
 <use ./screenshots/Sleep_case4.png>
-Package pdftex.def Info: ./screenshots/Sleep_case4.png  used on input line 425.
-(pdftex.def)             Requested size: 293.4647pt x 220.10712pt.
- [11] [12 <./screenshots/Sleep_case1.png> <./screenshots/Sleep_case2.png>]
-<./screenshots/Sleep_case5.png, id=317, 462.528pt x 346.896pt>
+Package pdftex.def Info: ./screenshots/Sleep_case4.png  used on input line 418.
+(pdftex.def)             Requested size: 244.55144pt x 183.41466pt.
+<./screenshots/Sleep_case5.png, id=337, 462.528pt x 346.896pt>
 File: ./screenshots/Sleep_case5.png Graphic file (type png)
 <use ./screenshots/Sleep_case5.png>
-Package pdftex.def Info: ./screenshots/Sleep_case5.png  used on input line 435.
-(pdftex.def)             Requested size: 293.4647pt x 220.10712pt.
- [13 <./screenshots/Sleep_case3.png> <./screenshots/Sleep_case4.png>] [14 <./screenshots/Sleep_case5.png>]
-Overfull \hbox (26.80505pt too wide) in paragraph at lines 472--473
-[]\T1/cmtt/m/n/10 BSP_FTM0_PWM_ChangeDutyCycle(BSP_LED ledColor, CPU_INT32U PWMfrequency, CPU_INT08U dutyCycle)\T1/cmr/m/n/10 :
- []
-
-
-Overfull \hbox (26.80505pt too wide) in paragraph at lines 484--485
-\T1/cmtt/m/n/10 BSP_FTM0_PWM_ChangeDutyCycle(BSP_LED ledColor, CPU_INT32U PWMfrequency, CPU_INT08U dutyCycle)\T1/cmr/m/n/10 . 
- []
-
-
-Overfull \hbox (9.02548pt too wide) in paragraph at lines 488--489
-\T1/cmtt/m/n/10 (void)\T1/cmr/m/n/10 , \T1/cmtt/m/n/10 BSP_LED_On (BSP_LED color)\T1/cmr/m/n/10 , \T1/cmtt/m/n/10 BSP_LED_Off (BSP_LED color) \T1/cmr/m/n/10 and \T1/cmtt/m/n/10 BSP_LED_Toggle (BSP_LED color)
- []
-
-[15]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 496.
- [16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 496.
+Package pdftex.def Info: ./screenshots/Sleep_case5.png  used on input line 429.
+(pdftex.def)             Requested size: 244.55144pt x 183.41466pt.
+ [13 <./screenshots/Sleep_case3.png> <./screenshots/Sleep_case4.png>]
+<./screenshots/PSM_case2.png, id=350, 541.27219pt x 339.51843pt>
+File: ./screenshots/PSM_case2.png Graphic file (type png)
+<use ./screenshots/PSM_case2.png>
+Package pdftex.def Info: ./screenshots/PSM_case2.png  used on input line 458.
+(pdftex.def)             Requested size: 171.18898pt x 107.37886pt.
+ [14 <./screenshots/Sleep_case5.png> <./screenshots/PSM_case2.png (PNG copy)>]
+<./screenshots/IdleCorrelated1.png, id=359, 462.528pt x 346.896pt>
+File: ./screenshots/IdleCorrelated1.png Graphic file (type png)
+<use ./screenshots/IdleCorrelated1.png>
+Package pdftex.def Info: ./screenshots/IdleCorrelated1.png  used on input line 489.
+(pdftex.def)             Requested size: 171.18898pt x 128.39185pt.
+<./screenshots/Scatter1.png, id=361, 1264.725pt x 709.14937pt>
+File: ./screenshots/Scatter1.png Graphic file (type png)
+<use ./screenshots/Scatter1.png>
+Package pdftex.def Info: ./screenshots/Scatter1.png  used on input line 507.
+(pdftex.def)             Requested size: 489.10287pt x 274.24068pt.
+<./screenshots/UncorrelatedComparison.png, id=362, 964.35281pt x 359.84438pt>
+File: ./screenshots/UncorrelatedComparison.png Graphic file (type png)
+<use ./screenshots/UncorrelatedComparison.png>
+Package pdftex.def Info: ./screenshots/UncorrelatedComparison.png  used on input line 521.
+(pdftex.def)             Requested size: 489.10287pt x 182.50789pt.
+ [15 <./screenshots/IdleCorrelated1.png>] [16 <./screenshots/Scatter1.png (PNG copy)> <./screenshots/UncorrelatedComparison.png (PNG copy)>]
+<./screenshots/Hist_case2.png, id=380, 462.528pt x 346.896pt>
+File: ./screenshots/Hist_case2.png Graphic file (type png)
+<use ./screenshots/Hist_case2.png>
+Package pdftex.def Info: ./screenshots/Hist_case2.png  used on input line 535.
+(pdftex.def)             Requested size: 205.4223pt x 154.06915pt.
+<./screenshots/Hist_case4.png, id=381, 462.528pt x 346.896pt>
+File: ./screenshots/Hist_case4.png Graphic file (type png)
+<use ./screenshots/Hist_case4.png>
+Package pdftex.def Info: ./screenshots/Hist_case4.png  used on input line 545.
+(pdftex.def)             Requested size: 205.4223pt x 154.06915pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 556.
+ [17 <./screenshots/Hist_case2.png> <./screenshots/Hist_case4.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 556.
  (/home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab1/Report/Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 496.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 496.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 556.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 556.
 Package rerunfilecheck Info: File `Report.out' has not changed.
-(rerunfilecheck)             Checksum: 84D3062F76E64702F74854AFEBEC0014;2918.
+(rerunfilecheck)             Checksum: ED7746E0AE9F956360C3D981C9830C52;3500.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 496.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 556.
  ) 
 Here is how much of TeX's memory you used:
- 20074 strings out of 492167
- 378408 string characters out of 6131559
- 453143 words of memory out of 5000000
- 24198 multiletter control sequences out of 15000+600000
- 546131 words of font info for 57 fonts, out of 8000000 for 9000
+ 20133 strings out of 492167
+ 379910 string characters out of 6131559
+ 454967 words of memory out of 5000000
+ 24239 multiletter control sequences out of 15000+600000
+ 546830 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,11n,67p,1369b,793s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on "/home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab1/Report/Report.pdf" (16 pages, 858519 bytes).
+ 44i,11n,67p,1321b,758s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on "/home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab1/Report/Report.pdf" (17 pages, 1426586 bytes).
 PDF statistics:
- 413 PDF objects out of 1000 (max. 8388607)
- 337 compressed objects within 4 object streams
- 75 named destinations out of 1000 (max. 500000)
- 373 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 467 PDF objects out of 1000 (max. 8388607)
+ 381 compressed objects within 4 object streams
+ 87 named destinations out of 1000 (max. 500000)
+ 438 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -36,7 +36,7 @@
 %  |_____|_| \_|  |_|  |_|  \_\\____/|_____/ \____/ \_____|  |_|  |_____\____/|_| \_|
 %
 \section{Introduction}
-    The goal of this very first laboratory is to understand the basics of Dynamic Power Management (DPM) by simulating a simple power state machine (PSM) with the provided simulator (written in \texttt{C} language), according to different workloads provided. The overall purpose is to observe the different behaviors obtained and evaluating carefully the consequences of the overall decision made. The overall laboratory, and hence, the report, is divided into 3 main parts:
+    The goal of this very first laboratory is to understand the basics of Dynamic Power Management (DPM) by simulating a simple power state machine (PSM) with the provided simulator (written in \texttt{C} language), according to different workloads provided. The overall purpose is to observe the different behaviors obtained and evaluating carefully the consequences of the overall decisions made. The overall laboratory, and hence, the report, is divided into 3 main parts:
     \begin{itemize}
         \item Workload profiles generation
         \item Timeout Policy
@@ -107,7 +107,7 @@
             }
         \end{figure}
     \subsection{Tri-modal distribution}
-        For this final distribution the idle values were required to be extracted from a trim-modal distribution with the following means: $50 \mu s$, $100 \mu s$, and finally $150 \mu s$. The tri-modal distribution had to be obtained using the supersposition of 3 different normal distributions with the aforementioned means and all the same standard deviation equal to $10 \mu s$.
+        For this final distribution the idle values were required to be extracted from a tri-modal distribution with the following means: $50 \mu s$, $100 \mu s$, and finally $150 \mu s$. The tri-modal distribution had to be obtained using the superposition of 3 different normal distributions with the aforementioned means and all the same standard deviation equal to $10 \mu s$.
         To generate these idle values we resorted again to the \texttt{gauss(float mean, float std\_dev)} method in order to first obtain the 3 different gaussian distributions. Finally, in order to equally extract values from them (hence obtaining the desired tri-modal behavior) we implemented a random extraction from the three normal distributions by "tossing a coin" (with three possible choices). To do that we used the \texttt{choice([0, 1, 2])} method that allowed us to select, time after time, from which gaussian we will have extracted the new idle value (each parameter in the list passed to the \texttt{choice()} method corresponds to a different gaussian  distribution).
         \begin{figure}[htp]
             \centering
@@ -157,9 +157,9 @@
 
             As a side note: the PSM we used includes in fact the presence of the \texttt{Sleep} state, which is however \emph{disabled} directly by the \texttt{dpm\_simulator} program that, for this first case, simply does not allow any transition to it, de facto obtaining a PSM exactly equal to the one represented in Figure(\ref{fig:PSM_case1}).
 
-            In a Timeout policy like the one tested, the system will run in a active state when required and evaluate the necessity to reach the \texttt{Idle} state. to do that, when the workload profile cease to be active, the system waits into the \texttt{Run} state of the PSM for a certain amount of time, also called \emph{Timeout time}. In our case, the \texttt{Timeout time} refers to the \texttt{Idle} state, hence we simply called it \texttt{TtoIdle}. If the actual idle period of the workload exceeds our timeout value (considered as a threshold) then our system can transition from the \texttt{Run} state of the PSM to the \texttt{Idle} state. Of course, considering the transition delay times and non-ideal power consumptions, this timeout threshold must be carefully evaluated to not let our system consume more than if the system was simply kept operating in the \texttt{Run} state.
+            In a Timeout policy like the one tested, the system will run in an active state when required and evaluate the necessity to reach the \texttt{Idle} state. To do that, when the workload profile cease to be active, the system waits into the \texttt{Run} state of the PSM for a certain amount of time, also called \emph{Timeout time}. In our case, the \texttt{Timeout time} refers to the \texttt{Idle} state, hence we simply called it \texttt{TtoIdle}. If the actual idle period of the workload exceeds our timeout value (considered as a threshold) then our system can transition from the \texttt{Run} state of the PSM to the \texttt{Idle} state. Of course, considering the transition delay times and non-ideal power consumptions, this timeout threshold must be carefully evaluated to not let our system consume more than if the system was simply kept operating in the \texttt{Run} state.
 
-            By analyzing the given PSM, we can find it's \emph{Break-Even Time}. Knowing form the theory of Timeout Policies, the \emph{Break-Even Time} can be found using two formulas, depending on the intrinsic parameters of the PSM itself (non-ideal parameters):
+            By analyzing the given PSM, we can find its \emph{Break-Even Time}. Knowing from the theory of Timeout Policies, the \emph{Break-Even Time} can be found using two formulas, depending on the intrinsic parameters of the PSM itself (non-ideal parameters):
 
             \begin{equation}
                 Tbe = \left\{
@@ -170,7 +170,7 @@
                 \right.
             \end{equation}
 
-            The first equation is applied in all those cases where is proven that the power required by a transition is greater than the power of the active state (in this case the \texttt{Run} state). This characteristic is intrinsic in all those systems that have a certain inertia when transitioning from a run state into a low-power one, such as rotating hard drives (or similar mechanical systems and not purely electrical).
+            The first equation is applied in all those cases where is proven that the power required by a transition is greater than the power of the active state (in this case the \texttt{Run} state). This characteristic is intrinsic in all those systems that have a certain inertia when transitioning from a run state into a low-power one, such as rotating hard drives (or similar mechanical systems that are not purely electrical).
 
             The second equation, on the other hand, is applied in all those cases where is proven that the power required to take a transition is lower than the power required by the active state. This is in general a characteristic of the majority of all those systems that do not include mechanical parts to be controlled.
 
@@ -207,7 +207,7 @@
 
             \begin{figure}[htp]
                 \centering
-                \includegraphics[width=0.6 \columnwidth]{./screenshots/Idle_case1.png}
+                \includegraphics[width=0.5 \columnwidth]{./screenshots/Idle_case1.png}
                 \caption{
                         \label{fig:Idle_case1}
                         The overall power consumption improvements we obtained with the first workload (the High Utilization one).
@@ -251,7 +251,7 @@
 
             \begin{figure}[htp]
                 \centering
-                \includegraphics[width=0.6 \columnwidth]{./screenshots/Idle_case2.png}
+                \includegraphics[width=0.5 \columnwidth]{./screenshots/Idle_case2.png}
                 \caption{
                         \label{fig:Idle_case2}
                         The overall power consumption improvements we obtained with the second workload (the Low Utilization one).
@@ -269,14 +269,14 @@
             The difference with the previous workload is clear if we think at the different workload profile structure: having a distribution of idle periods that is 4 times larger than the previous one allows to the system to have enough time to enter the \texttt{Idle} state and to effectively benefit from entering it. This also explains why lower timeout values bring higher benefits in terms of power consumption: less time is wasted in the \texttt{Run} state to just observe the workload and decide what to do. A small timeout time minimizes the chances of spending time at a higher consumption rate and maximizes the chances of having the system idling in a a low power state.
             While the previous case demonstrated the obvious presence of two different and opposed forces in the system, here the second contribution (the one that reduces the effectiveness of the low power state if the timeout parameter steadily increases) has the majority of the impact on the system.
             In fact, if we observe closely the graph (\ref{fig:Idle_case2}) when the timeout parameter is approximately equal to $285 \mu s$ we can see that the power consumption becomes greater if the DPM is enabled.
-            At $340 \mu s$ the system reaches its higher power consumption possible. We can take a similar approach to what we have done before and analyze this behavior: when the timeout parameter is equal to $335-340 /mu s$ the remaining portion of "\emph{useful}" time is equal to $60 \mu s$, in the best case scenario (i.e. assuming we are in the longest possible idle period $400 \mu s$). If we then consider all other timeout values before the best case scenario then we can see that there's a good probability that the remaining time in which the system can stay in the \texttt{Idle} state is lower than the \emph{Break-Even time}. Hence the power consumption of the system will be higher than the same system without DPM.
+            At $340 \mu s$ the system reaches its higher power consumption possible. We can take a similar approach to what we have done before and analyze this behavior: when the timeout parameter is equal to $335-340 \mu s$ the remaining portion of "\emph{useful}" time is equal to $60 \mu s$, in the best case scenario (i.e. assuming we are in the longest possible idle period $400 \mu s$). If we then consider all other timeout values before the best case scenario then we can see that there's a good probability that the remaining time in which the system can stay in the \texttt{Idle} state is lower than the \emph{Break-Even time}. Hence the power consumption of the system will be higher than the case with the same system without DPM.
 
         \subsubsection{Workload profile \#3 - Normal Distribution of Idle times}
             In figure (\ref{fig:Idle_case3}) we reported the behavior observed by running a batch of simulations for the third workload profile.
 
             \begin{figure}[htp]
                 \centering
-                \includegraphics[width=0.6 \columnwidth]{./screenshots/Idle_case3.png}
+                \includegraphics[width=0.5 \columnwidth]{./screenshots/Idle_case3.png}
                 \caption{
                         \label{fig:Idle_case3}
                         The overall power consumption improvements we obtained with the third workload (Normal distribution of idle times).
@@ -295,7 +295,7 @@
 
             \begin{figure}[htp]
                 \centering
-                \includegraphics[width=0.6 \columnwidth]{./screenshots/Idle_case4.png}
+                \includegraphics[width=0.5 \columnwidth]{./screenshots/Idle_case4.png}
                 \caption{
                         \label{fig:Idle_case4}
                         The overall power consumption improvements we obtained with the fourth workload (Exponential distribution of idle times).
@@ -316,7 +316,7 @@
 
             \begin{figure}[htp]
                 \centering
-                \includegraphics[width=0.6 \columnwidth]{./screenshots/Idle_case5.png}
+                \includegraphics[width=0.5 \columnwidth]{./screenshots/Idle_case5.png}
                 \caption{
                         \label{fig:Idle_case5}
                         The overall power consumption improvements we obtained with the fifth workload (Tri-Modal distribution of idle times).
@@ -332,17 +332,8 @@
 
     \subsection{Case \#2: Timeout Policy w/ \texttt{Idle} + \texttt{Sleep} states PSM}
         \subsubsection{The PSM}
-            For this second case we must enable the second low-power state (the \texttt{Sleep} state) fo the PSM. A diagram of the original PSM is reported in Figure(\ref{fig:PSM_case2}).
-            Also, the diagram of the PSM actually used is reported in Figure(\ref{fig:PSM_case3}).
-
-            \begin{figure}[htp]
-                \centering
-                \includegraphics[width=0.35 \columnwidth]{./screenshots/PSM_case2.png}
-                \caption{
-                        \label{fig:PSM_case2}
-                        The Power State Machine provided. Both low power states are enabled and reachable. This diagram does not actually represents the transitions implemented for our tests.
-                }
-            \end{figure}
+            For this second case we must enable the second low-power state (the \texttt{Sleep} state) of the PSM.
+            The diagram of the PSM actually used is reported in Figure(\ref{fig:PSM_case3}).
 
             \begin{figure}[htp]
                 \centering
@@ -363,38 +354,38 @@
             \end{itemize}
 
             The PSM we used in order to test the new configuration that includes the \texttt{Sleep} state is visible in the second diagram (\ref{fig:PSM_case3}).
-            The behavior is defined as follows: if the workload profile enters an idle period then both the timeout timers are activated (\texttt{Idle} and \texttt{Sleep} timeouts). Assuming the \texttt{Sleep} timeout threshold is greater than the \texttt{Idle} timeout threshold, if the \texttt{Idle} timeout timer expires and the workload is still in an idle state, then the system takes the transition from the \texttt{Run} state to the \texttt{Idle} one.
-            Also the second threshold is checked: if the timeout timer associated to the \texttt{Sleep} state expires, then the system can also move to the \texttt{Sleep} state. This transition is represented in the diagram by the arrow going from the \texttt{Idle} state to the \texttt{Sleep} one. Please, notice how the transition has been implemented: the transitions costs for both time and power consumption include both the costs necessary to go from \texttt{Idle} to \texttt{Run} and then from \texttt{Run} to \texttt{Sleep} state. That's why we decided to report also the provided diagram (\ref{fig:PSM_case2}), that represents the "logical" transitions, meanwhile the second diagram (\ref{fig:PSM_case3}) represents the "physical" ones.
+            The behavior is defined as follows: if the workload profile enters an idle period then both the timeout timers are activated (\texttt{Idle} and \texttt{Sleep} timeouts). Assuming the \texttt{Sleep} timeout threshold is greater than the \texttt{Idle} timeout threshold, if the \texttt{Idle} timeout timer expires and the workload is still in an Inactive state, then the system takes the transition from the \texttt{Run} state to the \texttt{Idle} one.
+            Also the second threshold is checked: if the timeout timer associated to the \texttt{Sleep} state expires, then the system can also move to the \texttt{Sleep} state. This transition is represented in the diagram by the arrow going from the \texttt{Idle} state to the \texttt{Sleep} one.
             Finally, whenever the workload resumes from the inactive state and goes back into an active state the two transitions going from the \texttt{Idle} (or \texttt{Sleep}) states can be taken to revert the system into the \texttt{Run} state.
 
         \subsubsection{The modified \texttt{dpm\_simulator}}
-            To add the capability to the simulator to reach the \texttt{Sleep} state, we were asked to add the code to implement the policy. The functionality is pretty simple: at each instant, we check if the current time has overcome the first timeout threshold (associated to the \texttt{Idle} state). If it is the case, the system can reach the \texttt{Idle} state. If not the system will remain into the \texttt{Run} state. Once we declared that, at least, the system is eligible to reach the \texttt{Idle} state, we check again if it can reach the \texttt{Sleep} state. To do that, we check if the current time is greater than the second timeout threshold (associated to the \texttt{Sleep} state). At the same time we also check if the second threshold is effectively greater than the first one (this control, unnecessary due to our assumption that the \texttt{Sleep} timeout is always larger than the \texttt{Idle} timeout, is however necessary considering the integration of our simulator with the \texttt{python} script as we will see in the next sections). If both the conditions reveal to be true, then the system is eligible to reach the \texttt{Sleep} state.
-            As a side note: by observing the conditions imposed above one could argue that such implementation may allow a transition directly from the \texttt{Run} state to the \texttt{Sleep} one. However, such transition is impossible firstly because it has not been implemented in the PSM file feeded as input to the simulator and secondly because of the internal time-incremental logic the simulator adopts (that guarantees that the \texttt{Idle} state will be reached before the \texttt{Sleep} one).
+            To add the capability to the simulator to reach the \texttt{Sleep} state, we were asked to add the code to implement the policy. The functionality is pretty simple: at each instant, we check if the current time has overcome the first timeout threshold (associated to the \texttt{Idle} state). If it is the case, the system can reach the \texttt{Idle} state. If not the system will remain into the \texttt{Run} state. Once the system is proven to be eligible to reach the \texttt{Idle} state, we check again if it can reach the \texttt{Sleep} state. To do that, we check if the current time is greater than the second timeout threshold (associated to the \texttt{Sleep} state). At the same time we also check if the second threshold is effectively greater than the first one (this control, unnecessary due to our assumption that the \texttt{Sleep} timeout is always larger than the \texttt{Idle} timeout, is however necessary considering the integration of our simulator with the \texttt{python} script as we will see in the next sections). If both the conditions reveal to be true, then the system is eligible to reach the \texttt{Sleep} state.
+            As a side note: by observing the conditions imposed above one could argue that such implementation may allow a transition directly from the \texttt{Run} state to the \texttt{Sleep} one. However, such transition is impossible firstly because it has not been implemented in the PSM file feeded as input to the simulator and secondly because of the internal time-incremental logic the simulator adopts (that guarantees that the \texttt{Idle} state will always be reached before the \texttt{Sleep} one).
 
             In the following section we briefly present the modifications we made to the original \texttt{python} script used to automatically test the behavior of the system with different values of the two Timeout parameters.
 
-        \subsubsection{Sweeping the \texttt{Sleep} Timout parameter - \texttt{Python} Script}
-            With the modifications made to the original \texttt{python} script, we are now able to launch multiple iterations of the \texttt{dpm\_simulator} program, by keeping fixed the \texttt{Idle} timeout parameter and by seeping the \texttt{Sleep} parameter on top of it. The script is again able to manage automatically the different parameters to be passed to the program and gathering all the results obtained on the power consumption, with the final goal of completing a final summary of the system's behavior (represented by a bar graph).
+        \subsubsection{Sweeping the \texttt{Sleep} Timeout parameter - \texttt{Python} Script}
+            With the modifications made to the original \texttt{python} script, we are now able to launch multiple iterations of the \texttt{dpm\_simulator} program, by keeping fixed the \texttt{Idle} timeout parameter and by sweeping the \texttt{Sleep} parameter on top of it. The script is again able to manage automatically the different parameters to be passed to the program and gathering all the results obtained on the power consumption, with the final goal of completing a final summary of the system's behavior (represented by a bar graph).
 
             For each workload profile, multiple runs of the script have been made (in the previous case just one single run of the script was necessary). This behavior is necessary in order to test the system with different conditions on the \texttt{Idle} timeout: the script, being derived from the first version we used before, is able to sweep only one timeout parameter at a time, in this case only the \texttt{Sleep} one. To "sweep" also the \texttt{Idle} timeout parameter, we decided to launch multiple times the same script by fixing at each time a different value.
 
-            The script receives as parameters the workload profile we want to test (a number going from 1 to 5), the minimum step used for the timeout sweeping, the fixed value for the \texttt{Idle} timeout parameter and finally the maximum value the sweep of the \texttt{Sleep} timeout can assume. The script, given the maximum number allowed for the sweep and the minimum sweep step, computes then the total number of iterations for the simulator (each iteration corresponds to a different sweep step). As before, the results are saved into multiple files and finally collected to draw a graph representing the behavior of the system.
+            The script receives as parameters the workload profile we want to test (a number going from 1 to 5), the minimum step used for the timeout sweeping, the fixed value for the \texttt{Idle} timeout parameter and finally the maximum value the sweep of the \texttt{Sleep} timeout can assume.
 
         \subsubsection{Workload profile \#1 - High Utilization}
-            For this first case we launched 5 different simulations with 5 different \texttt{Idle} timeout values. For each simulation, the script sweeped the \texttt{Sleep} timeout parameter from $0 \mu s$ to $1 \mu s$. We report in Figure (\ref{fig:Sleep_case1}) just one of them: the batch of simulations done while fixing the \texttt{Idle} timeout parameter @ $40 \mu s$ (all the other batches follow the very same principle).
+            For this first case we launched 5 different simulations with 5 different \texttt{Idle} timeout values. For each simulation, the script sweeped the \texttt{Sleep} timeout parameter from $0 \mu s$ to $100 \mu s$. We report in Figure (\ref{fig:Sleep_case1}) just one of them: the batch of simulations done while fixing the \texttt{Idle} timeout parameter @ $40 \mu s$ (all the other batches follow the very same principle).
 
             \begin{figure}[htp]
                 \centering
-                \includegraphics[width=0.6 \columnwidth]{./screenshots/Sleep_case1.png}
+                \includegraphics[width=0.5 \columnwidth]{./screenshots/Sleep_case1.png}
                 \caption{
                         \label{fig:Sleep_case1}
                         The overall power consumption improvements we obtained with the first workload (the High Utilization one).
                 }
             \end{figure}
 
-            Again, like we saw with the previous tests, this workload profile doesn't benefit at all of DPM, since the extracted idle periods are too short to reduce the power consumption, considering the characteristics of the system. In this case, with the \texttt{Sleep} state enable and reachable, the results are even poorer than before.
-            From the previous graph (\ref{fig:Sleep_case1}) we can observe that the power consumption remains stable @ $-4.7\%$: this value shows exactly the behavior of the system as if only the \texttt{Idle} state was reachable (in fact, the \texttt{Sleep} state becomes reachable only if its related timeout threshold is exceeded, which we assumed cannot be smaller or equal the \texttt{Idle} timeout threshold).
-            Only when the \texttt{Sleep} timeout parameters is set grater than the \texttt{Idle} threshold the system can reach the corresponding \texttt{Sleep} state. In our graph, this behavior is clearly visible starting from the simulation done @ $45 \mu s$.
+            Again, like we saw with the previous tests, this workload profile doesn't benefit at all of DPM, since the extracted idle periods are too short to reduce the power consumption, considering the characteristics of the system. In this case, with the \texttt{Sleep} state enabled and reachable, the results are even poorer than before.
+            From the previous graph (\ref{fig:Sleep_case1}) we can observe that the power consumption remains initially stable @ $-4.7\%$: this value shows exactly the behavior of the system as if only the \texttt{Idle} state was reachable (in fact, the \texttt{Sleep} state becomes reachable only if its related timeout threshold is exceeded, which we assumed cannot be smaller or equal the \texttt{Idle} timeout threshold).
+            Only when the \texttt{Sleep} timeout parameters is set greater than the \texttt{Idle} threshold the system can reach the corresponding \texttt{Sleep} state. In our graph, this behavior is clearly visible starting from the simulation done @ $45 \mu s$.
             Again, like to what seen before, as we increase the timeout threshold the power consumption penalty decreases since less and less idle periods can actually be taken by the machine.
 
         \subsubsection{Workload profile \#2 - Low Utilization}
@@ -402,7 +393,7 @@
 
         \begin{figure}[htp]
             \centering
-            \includegraphics[width=0.6 \columnwidth]{./screenshots/Sleep_case2.png}
+            \includegraphics[width=0.5 \columnwidth]{./screenshots/Sleep_case2.png}
             \caption{
                     \label{fig:Sleep_case2}
                     The overall power consumption improvements we obtained with the second workload (the Low Utilization one).
@@ -412,32 +403,35 @@
         \subsubsection{Workload profile \#3 - Normal distribution of Idle periods}
         \begin{figure}[htp]
             \centering
-            \includegraphics[width=0.6 \columnwidth]{./screenshots/Sleep_case3.png}
+            \includegraphics[width=0.5 \columnwidth]{./screenshots/Sleep_case3.png}
             \caption{
                     \label{fig:Sleep_case3}
-                    The overall power consumption improvements we obtained with the third workload (Normal distribution of ilde times).
+                    The overall power consumption improvements we obtained with the third workload (Normal distribution of idle times).
             }
         \end{figure}
+
+        \newpage
 
         \subsubsection{Workload profile \#4 - Exponential distribution of Idle periods}
-        \begin{figure}[htp]
-            \centering
-            \includegraphics[width=0.6 \columnwidth]{./screenshots/Sleep_case4.png}
-            \caption{
-                    \label{fig:Sleep_case4}
-                    The overall power consumption improvements we obtained with the fourth workload (Exponential distribution of ilde times).
-            }
-        \end{figure}
+            \begin{figure}[htp]
+                \centering
+                \includegraphics[width=0.5 \columnwidth]{./screenshots/Sleep_case4.png}
+                \caption{
+                        \label{fig:Sleep_case4}
+                        The overall power consumption improvements we obtained with the fourth workload (Exponential distribution of idle times).
+                }
+            \end{figure}
 
         \subsubsection{Workload profile \#5 - Tri-Modal distribution of Idle periods}
-        \begin{figure}[htp]
-            \centering
-            \includegraphics[width=0.6 \columnwidth]{./screenshots/Sleep_case5.png}
-            \caption{
-                    \label{fig:Sleep_case5}
-                    The overall power consumption improvements we obtained with the fifth workload (Tri-Modal distribution of ilde times).
-            }
-        \end{figure}
+
+            \begin{figure}[htp]
+                \centering
+                \includegraphics[width=0.5 \columnwidth]{./screenshots/Sleep_case5.png}
+                \caption{
+                        \label{fig:Sleep_case5}
+                        The overall power consumption improvements we obtained with the fifth workload (Tri-Modal distribution of idle times).
+                }
+            \end{figure}
 
 %   _____           _     ____
 %  |  __ \         | |   |___ \
@@ -446,51 +440,117 @@
 %  | |  | (_| | |  | |_   ___) |
 %  |_|   \__,_|_|   \__| |____/
 %
-%
-\section{Part 2: The History Policy}
+\section{Part 3: The History Policy}
     \subsection{Introduction}
-        For this second part of the laboratory assignment we used the workload profiles we created previously to simulate different behaviors on the provided PSM. We will discuss the results obtained dividing our work into two main cases.
+        For this last part of the laboratory experience we decided to split the tests made in two different cases: a first case that considers only the previous workloads made (we will call them \texttt{Uncorrelated}) and a second case that considers a new set of workloads with correlated features (hence called \texttt{Correlated}).
+        For both case we will use yet a different PSM configuration, briefly described in the following section.
 
-        For the first case we will use a simplified version of the overall Power State Machine that can only complete transitions to and from the \texttt{Idle} state (such transitions are, of course, consequence of the use of a Dynamic Power Management technique) while, for the second case we will also finally enable the \texttt{Sleep} state of the PSM, in order to access an additional low-power state (i.e. both \texttt{Idle} and \texttt{Sleep} state will be made accessible).
+        Once again, we decided to leverage our \texttt{python} script (the same used in Part 2 of this very same report (\texttt{Sleep} state reachable)) to launch multiple batches of simulations.
 
-        For both PSMs we will analyze the different behaviors obtained as consequences of tuning the two main parameters when considering a DPM Timeout Policy: the Timeout parameters \texttt{TtoIdle} (for both cases we will analyze) and \texttt{TtoSleep} (only for the second case).
+    \subsection{The PSM}
+        For this last set of test, the original form of the provided PSM has been used, as reported in Figure(\ref{fig:PSM_case2}). With respect to the PSM showed in Figure (\ref{fig:PSM_case3}), the transition from the \texttt{Idle} state to the \texttt{Sleep} one has been deleted and the direct transition from the \texttt{Run} state to the \texttt{Sleep} one has been added. This allows the system to reach each low-power state independently from the other low-power state and hence directly.
 
-        As we explained in the following sections, we implemented and leveraged a \texttt{python} script to launch multiple simulations while sweeping the values of the \texttt{TtoIdle} parameter, allowing us to observe the different behavior of the system assumed at each variation of the parameter.
+        The History (or Predictive) Policy addresses the issue of the power wasted in the \texttt{Run} state while waiting the timeout(s) to expire. In a predictive policy we substitute that time with a simple calculation based on the history of the workload profile, trying to predict what will be the value of the upcoming idle period. Of course, the predicted value may not represent the next actual idle period: the prediction may be wrong and may not represent at all the reality of the workload profile.
+        Once a value $T_{pred}$ has been obtained, we compare it to the \emph{Break-Even Time} of the system: if the $T_{pred}$ parameter is higher than it is worth taking the transition from the \texttt{Run} state into a low-power one. In our case, given the presence of two different low-power states at the same time, the predicted value will be compared against two different parameters.
 
-    \subsection{Case \#1: Timeout Policy w/ \texttt{Idle} state only PSM}
-        \subsubsection{The PSM}
+        \begin{figure}[htp]
+            \centering
+            \includegraphics[width=0.35 \columnwidth]{./screenshots/PSM_case2.png}
+            \caption{
+                    \label{fig:PSM_case2}
+                    The Power State Machine provided. Both low power states are enabled and reachable.
+            }
+        \end{figure}
 
+    \subsection{The modified \texttt{dpm\_simulator}}
+        Also for this new policy, we were required to implement the logic behind the decision of the simulator. At first, we had to implement the formula that allows us to extract a predicted value: we decided to implement a simple double degree polynomial like the following one:
+        \begin{equation}
+            T_{pred}(x) = K_1T_{idle}[i-1]^2 + K_2T_{idle}[i-2] + K_3
+        \end{equation}
+        where the $K_1$, $K_2$ and $K_3$ parameters are based on the analysis of the \emph{Correlated} workloads we will mention in the following sections.
 
-        \subsection{PWM wave generation}
-        The PWM generation is done by leveraging the Flex Timer 0 embedded into the microprocessor. Once the timer initialized, a PWM wave is created following the given parameters, such as the frequency and the duty cycle. Finally the wave is feeded to the pin mapped to the embedded RGB LED on the NXP board.
+        Once the $T_{pred}$ value computed, we need to compare it against the two available thresholds (one for each low-power state). So firstly we compare it against the threshold related to the \texttt{Idle} state, if the predicted value is greater then the system is eligible to reach the corresponding \texttt{Idle} state; otherwise the system keeps itself in the \texttt{Run} state.
+        Again, once this first decision has been sorted out it is time to compare our predicted value against the second threshold, the one related to the \texttt{Sleep} state. If it's greater than this parameter, the system is eligible to reach the \texttt{Sleep} state. At the same time we also check that the \texttt{Sleep} threshold is greater than the \texttt{Idle} one (just as a precaution, the former should be greater than the latter by assumption).
 
-        \begin{itemize}
-            \item \texttt{BSP\_FTM0\_PWM\_Init()}: This is the initialization function for the timer: the clock is enabled for port D and each pin of the RGB LED is set as a function of the relative FlexTimer0 channel (the RED one is associated to channel \#0, the GREEN one is associated to channel \#1 and the BLUE one to channel \#2).
-            \item \texttt{BSP\_FTM0\_PWM\_set(CPU\_INT32U PWMfrequency, CPU\_INT08U dutyCycle)}: This function, given the two parameters, computes the value for the \texttt{modulo} register and sets an initial value for the hardware counter of the timer. The \texttt{modulo} value is simply computed by dividing the clock frequency of the timer ($80MHz$ in our case) by the wanted PWM frequency. In our case, given the $10KHz$ PWM frequency given by the requirements, the final value will be 8000. It is useful to underline the importance of this value because the \texttt{FTM0->MOD} register can accept values up to 65535 (16-bit register). If a lower value of the PWM frequency is needed we could probably compute a value for the \texttt{modulo} register that cannot be represented on 16 bits: in this case the use of the prescaler is mandatory. Since the PWM frequency value adopted in our program is fixed and below the threshold, no logic has been implemented to automatically adjust the prescaler consequently to the value of the \texttt{PWMfrequency} parameter. Finally, the function calls the \texttt{setDutyCycle(BSP\_LED ledColor, CPU\_INT32U modulo, CPU\_INT08U dutyCycle)} static function.
-            \item \texttt{setDutyCycle(BSP\_LED ledColor, CPU\_INT32U modulo, CPU\_INT08U dutyCycle)}: this function is defined as \texttt{static} and so its visibility is limited only to \texttt{bsp\_timer.c} source file. This function, given the \texttt{dutyCycle} parameter and the previously computed \texttt{modulo} parameter, sets the according value for register \texttt{FTM0->CONTROLS[i].CnV} (where i = 0, 1, 2 and corresponds to the number of the channel of which we modify the value of the PWM). Finally the \texttt{BSP\_FTM0\_PWM\_EnableLED(BSP\_LED ledColor)} function is called, which will finally enable the wanted timer channel, accordingly to the requested color of the LED.
-            \item \texttt{BSP\_FTM0\_PWM\_EnableLED(BSP\_LED ledColor)}: this function, given the requested LED color, enables the corresponding timer channel.
-            \item \texttt{BSP\_FTM0\_PWM\_ChangeDutyCycle(BSP\_LED ledColor, CPU\_INT32U PWMfrequency, CPU\_INT08U dutyCycle)}: This function is used to expose and to wrap the \texttt{setDutyCycle(BSP\_LED ledColor, CPU\_INT32U modulo, CPU\_INT08U dutyCycle)} static function to the external software modules. This function will be used into the pushbutton interrupt service routine.
-        \end{itemize}
+        In the following sections we better explain the steps we made in order to get a set of correlated workload profiles and how we analyze them in order to obtain the constants of our polynomial used to get a predicted value.
 
-        \subsection{LED color switching}
-        During the execution of the \texttt{AcquireADCTask} infinite loop, an interrupt is raised if the pushbutton is pressed by the user: this will cause the LED color to change following the requested sequence.
-        Initially the idea was to create two separate tasks where the second one could manage the pushbutton status by acting in a polling fashion: after the execution of the first task (which would have had a higher priority) the second task would have been launched (a synchronization semaphore would be needed) that would have checked the pushbutton status acting consequently of its pressure. However, this solution would have added intrinsic latency due to both the alternation of the two tasks (context switch) and the polling approach (for instance, what would happen if the pushbutton is pressed just after the \texttt{read\_status} statement? We would need to wait the completion of the new instance of task \#1, waiting to gain access again to task \#2).
+    \subsection{The \emph{Correlated} workload profiles}
+        In order to have a good predictive policy it is mandatory to base our work upon the assumption that the workloads applied to our system cannot be Uncorrelated. An uncorrelated workload (as the ones designed before) will have a number of successive idle periods lengths that are, by construction, random. Hence, any predictive policy, no matter it's inherent complexity, will not be able to predict "reasonably" well each incoming idle period. In the following sections we will illustrate how we managed to modify our workload generator in order to get five different correlated workload profiles.
+        As a final note, take in mind that we both correlated the active and the idle periods.
 
-        Using an interrupt approach, on the contrary, eliminates the latency of the polling approach and the complications due to the dual task handling.
-        Let's now investigate the functions associated to the pushbutton, along with the Interrupt Service Routine:
+        \subsubsection{Active Periods | Low Utilization | High Utilization}
+            All the workload profiles that are based upon the \emph{uniform} distribution share the same modifications. The main idea is to extract the actual value based on the previous value extracted, which works as an input and "feedback" to the actual value extraction.
+            As an example, let's consider the uniform distribution that spans from $1 \mu s$ to $100 \mu s$ (with a middle value placed @ $50 \mu s$).
+            Assuming we previously extracted a value of $70 \mu s$, then the actual value will be extracted from a uniform distribution which spans from $20 \mu s$ up to $120 \mu s$. To cover the case where a new negative value has been extracted, we simply complement the result and consider it as a positive value.
+            In Figure (\ref{fig:IdleCorrelated1}) you can see how the idle periods of the initial Low Utilization workload profiles are now shaped.
 
-        \begin{itemize}
-            \item \texttt{BSP\_Switch\_Init()}: This function initializes the two pushbutton embedded on the board: \emph{Switch3} and \emph{Switch2}. For this assignment only \emph{Switch2} will be used, however I decided to include the configuration of \emph{Switch3} for future usecases. This function enables the clock to Port C, sets as input both switches pins and enables \emph{Switch2} to raise an interrupt only by reacting to a falling edge transition. Finally it declares the usage of the Interrupt Handler associated to \emph{Switch2}.
-            \item \texttt{SW2\_int\_hdlr(void)}: This is the Interrupt Handler associated to \emph{Switch2}. If this pushbutton is pressed, an interrupt is raised and the processor will start serving this part of the code. The status of the switch is read using the function \texttt{BSP\_Switch\_Read (BSP\_SWITCH sw)}: if the pushbutton has been pressed then the LED color is changed accordingly to the current color and the requested color sequence, using the function \texttt{BSP\_FTM0\_PWM\_ChangeDutyCycle(BSP\_LED ledColor, CPU\_INT32U PWMfrequency, CPU\_INT08U dutyCycle)}.
-            \item \texttt{BSP\_Switch\_Read (BSP\_SWITCH sw)}: this function reads the input data register of the selected pushbutton.
-        \end{itemize}
+            \begin{figure}[htp]
+                \centering
+                \includegraphics[width=0.35 \columnwidth]{./screenshots/IdleCorrelated1.png}
+                \caption{
+                        \label{fig:IdleCorrelated1}
+                        Distribution of the correlated idle periods.
+                }
+            \end{figure}
 
-        Other functions like the ones that can be found in \texttt{bsp\_led.c} will not be discussed since after a proper code cleanup they became unused: I decided to leave the entire \texttt{bsp\_led.c} and the functions like \texttt{BSP\_LED\_Init (void)}, \texttt{BSP\_LED\_On (BSP\_LED color)}, \texttt{BSP\_LED\_Off (BSP\_LED color)} and \texttt{BSP\_LED\_Toggle (BSP\_LED color)} for next use cases that another user may want to implement.
+        \subsubsection{Normal distribution | Exponential distribution | Tri-Modal distribution}
+            All these workloads follow a similar approach to correlation too.
+            In the case of the gaussian distribution, the previous extracted value is used as a mean for the value to be extracted (the standard deviation has been kept the same). If a negative value is extracted we continue to extract new values until a positive one is found.
+            A very similar approach is then applied to both the exponential distribution and the tri-modal one.
 
-        \newpage
+        \subsubsection{Scatter plots of the correlated workloads | Coefficients definition}
+            In Figure (\ref{fig:Scatter1}) you can appreciate a zoomed in representation of the graph containing all the workload represented on the same scatter plot (obtained using \texttt{MATLAB}). From this plot we were able to extract all the fitting polynomials necessary to find some common coefficient values to be used into our predictive polynomial.
+            To extract the coefficients, we found a fitting polynomial for each workload profile and finally made an average of all the coefficients obtained  (we excluded the fitting curve obtained with the exponential workload due to its inherent differences compared to all the other correlated workloads obtained).
 
-        \subsection{Flow Diagram for \texttt{AcquireADCTask}}
+            \begin{figure}[htp]
+                \centering
+                \includegraphics[width=1 \columnwidth]{./screenshots/Scatter1.png}
+                \caption{
+                        \label{fig:Scatter1}
+                        Zoomed-in view of the scatter plot created using \texttt{MATLAB}, feeded with the correlated idle values of each workload profile.
+                }
+            \end{figure}
 
+    \subsection{Sweeping the \texttt{Sleep} Prediction Threshold - \texttt{Python} Script}
+        Following the same work done previously for the extended timeout policy (the one that considers both low-power states available), we feeded our simulator with both correlated and uncorrelated workload profiles. Below, we discuss the results obtained only for the correlated workloads.
+        The uncorrelated workloads presented similar results to what already reported in the previous sections in terms of shape of the overall graph curve. However, the overall values were positive since the power consumption was reduced and not increased (with respect to the DPM-less system).
+        As a brief example, we report below the comparison between the same uncorrelated workload with the Timeout Policy (on the left) and with the Predictive Policy (on the right). The overall benefits are due basically to the choice of the coefficients that seems to adapt in a good way also to the distribution of uncorrelated values and, most of all, to the lack of wasted time waiting for the timeout thresholds to expire.
 
+        \begin{figure}[htp]
+            \centering
+            \includegraphics[width=1 \columnwidth]{./screenshots/UncorrelatedComparison.png}
+            \caption{
+                    \label{fig:UncorrelatedComparison}
+                    On the left: the uncorrelated workload (Normal Distribution of idle times) applied to the Timeout Policy.
+                    On the right: the same uncorrelated workload applied to the Predictive Policy.
+            }
+        \end{figure}
 
-    \end{document}
+        When considering the correlated case, the results obtained are really similar (in terms of shape of the graph curve) from each other. For brevity purposes we report only the case of the second workload profile, where the significant improvements can be easily observed by comparing the graph (\ref{fig:Sleep_case2}) obtained with the Timeout Policy and the graph (\ref{fig:Hist_case2}) with the History Policy.
+        Overall (i.e. when considering all the correlated workloads together), it is clear that the Predictive Policy brings really good results in terms of power consumption since all workloads present a reduction of the power consumption that spread from the $3.5-4 \%$ of the Exponential workload (Figure \ref{fig:Hist_case4}) up to the $25-30\%$ in the extreme case of the Low Utilization workload (Figure \ref{fig:Hist_case2}).
+
+        \subsubsection{Correlated Low Utilization - Profile \#2}
+            \begin{figure}[htp]
+                \centering
+                \includegraphics[width=0.42 \columnwidth]{./screenshots/Hist_case2.png}
+                \caption{
+                        \label{fig:Hist_case2}
+                        Power consumption summary graph obtained with the second Correlated Workload Profile. Notice the significant gains in terms of power consumption when comparing this graph with the same obtained with the Timeout Policy.
+                }
+            \end{figure}
+
+        \subsubsection{Correlated Exponential Distribution - Profile \#4}
+            \begin{figure}[htp]
+                \centering
+                \includegraphics[width=0.42 \columnwidth]{./screenshots/Hist_case4.png}
+                \caption{
+                        \label{fig:Hist_case4}
+                        Power consumption summary graph obtained with the fourth Correlated Workload Profile. Notice the significant gains in terms of power consumption when comparing this graph with the same obtained with the Timeout Policy.
+                }
+        \end{figure}
+
+        \subsection{Conclusions}
+        One characteristic provided by the History Policy over the Timeout Policy is the "regularity" of the obtained results. In fact, a quick look at both graphs clearly shows what policy will be easier to analyze from a designer perspective (we should also take in mind that the first graph operates in an uncorrelated environment).
+        It is also clear that the lack of a waiting time in the \texttt{Run} state also helps improving the overall power consumption. This comes however at a cost: the Predictive Policy must be supported by additional computations and comparisons in order to obtain a predicted value: of course, the more complicated the formula the more the power consumption required, such as the area overhead (if special purpose circuitry is needed). Our simulator does not take into account all this parameters, that must be taken into consideration by the system designer as trade-offs.
+
+\end{document}

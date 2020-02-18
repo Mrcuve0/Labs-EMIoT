@@ -3,33 +3,38 @@
 \contentsline {section}{\numberline {2}Part 1: Workload generation}{2}{section.2}% 
 \contentsline {subsection}{\numberline {2.1}Active Periods}{2}{subsection.2.1}% 
 \contentsline {subsection}{\numberline {2.2}High Utilization}{2}{subsection.2.2}% 
-\contentsline {subsection}{\numberline {2.3}Low Utilization}{3}{subsection.2.3}% 
-\contentsline {subsection}{\numberline {2.4}Normal distribution}{3}{subsection.2.4}% 
-\contentsline {subsection}{\numberline {2.5}Exponential distribution}{3}{subsection.2.5}% 
-\contentsline {subsection}{\numberline {2.6}Tri-modal distribution}{3}{subsection.2.6}% 
+\contentsline {subsection}{\numberline {2.3}Low Utilization}{2}{subsection.2.3}% 
+\contentsline {subsection}{\numberline {2.4}Normal distribution}{2}{subsection.2.4}% 
+\contentsline {subsection}{\numberline {2.5}Exponential distribution}{4}{subsection.2.5}% 
+\contentsline {subsection}{\numberline {2.6}Tri-modal distribution}{4}{subsection.2.6}% 
 \contentsline {section}{\numberline {3}Part 2: The Timeout Policy}{4}{section.3}% 
 \contentsline {subsection}{\numberline {3.1}Introduction}{4}{subsection.3.1}% 
-\contentsline {subsection}{\numberline {3.2}Case \#1: Timeout Policy w/ \texttt {Idle} state only PSM}{4}{subsection.3.2}% 
-\contentsline {subsubsection}{\numberline {3.2.1}The PSM}{4}{subsubsection.3.2.1}% 
-\contentsline {subsubsection}{\numberline {3.2.2}Sweeping the Timout parameter - \texttt {Python} Script}{5}{subsubsection.3.2.2}% 
+\contentsline {subsection}{\numberline {3.2}Case \#1: Timeout Policy w/ \texttt {Idle} state only PSM}{5}{subsection.3.2}% 
+\contentsline {subsubsection}{\numberline {3.2.1}The PSM}{5}{subsubsection.3.2.1}% 
+\contentsline {subsubsection}{\numberline {3.2.2}Sweeping the Timout parameter - \texttt {Python} Script}{6}{subsubsection.3.2.2}% 
 \contentsline {subsubsection}{\numberline {3.2.3}Workload profile \#1 - High Utilization}{6}{subsubsection.3.2.3}% 
 \contentsline {subsubsection}{\numberline {3.2.4}Workload profile \#2 - Low Utilization}{7}{subsubsection.3.2.4}% 
 \contentsline {subsubsection}{\numberline {3.2.5}Workload profile \#3 - Normal Distribution of Idle times}{8}{subsubsection.3.2.5}% 
 \contentsline {subsubsection}{\numberline {3.2.6}Workload profile \#4 - Exponential Distribution of Idle times}{8}{subsubsection.3.2.6}% 
-\contentsline {subsubsection}{\numberline {3.2.7}Workload profile \#5 - Tri-modal Distribution of Idle times}{9}{subsubsection.3.2.7}% 
+\contentsline {subsubsection}{\numberline {3.2.7}Workload profile \#5 - Tri-modal Distribution of Idle times}{10}{subsubsection.3.2.7}% 
 \contentsline {subsection}{\numberline {3.3}Case \#2: Timeout Policy w/ \texttt {Idle} + \texttt {Sleep} states PSM}{10}{subsection.3.3}% 
 \contentsline {subsubsection}{\numberline {3.3.1}The PSM}{10}{subsubsection.3.3.1}% 
 \contentsline {subsubsection}{\numberline {3.3.2}The modified \texttt {dpm\_simulator}}{11}{subsubsection.3.3.2}% 
-\contentsline {subsubsection}{\numberline {3.3.3}Sweeping the \texttt {Sleep} Timout parameter - \texttt {Python} Script}{11}{subsubsection.3.3.3}% 
+\contentsline {subsubsection}{\numberline {3.3.3}Sweeping the \texttt {Sleep} Timeout parameter - \texttt {Python} Script}{11}{subsubsection.3.3.3}% 
 \contentsline {subsubsection}{\numberline {3.3.4}Workload profile \#1 - High Utilization}{11}{subsubsection.3.3.4}% 
-\contentsline {subsubsection}{\numberline {3.3.5}Workload profile \#2 - Low Utilization}{11}{subsubsection.3.3.5}% 
-\contentsline {subsubsection}{\numberline {3.3.6}Workload profile \#3 - Normal distribution of Idle periods}{13}{subsubsection.3.3.6}% 
+\contentsline {subsubsection}{\numberline {3.3.5}Workload profile \#2 - Low Utilization}{12}{subsubsection.3.3.5}% 
+\contentsline {subsubsection}{\numberline {3.3.6}Workload profile \#3 - Normal distribution of Idle periods}{12}{subsubsection.3.3.6}% 
 \contentsline {subsubsection}{\numberline {3.3.7}Workload profile \#4 - Exponential distribution of Idle periods}{13}{subsubsection.3.3.7}% 
 \contentsline {subsubsection}{\numberline {3.3.8}Workload profile \#5 - Tri-Modal distribution of Idle periods}{13}{subsubsection.3.3.8}% 
-\contentsline {section}{\numberline {4}Part 2: The History Policy}{13}{section.4}% 
+\contentsline {section}{\numberline {4}Part 3: The History Policy}{13}{section.4}% 
 \contentsline {subsection}{\numberline {4.1}Introduction}{13}{subsection.4.1}% 
-\contentsline {subsection}{\numberline {4.2}Case \#1: Timeout Policy w/ \texttt {Idle} state only PSM}{14}{subsection.4.2}% 
-\contentsline {subsubsection}{\numberline {4.2.1}The PSM}{14}{subsubsection.4.2.1}% 
-\contentsline {subsection}{\numberline {4.3}PWM wave generation}{14}{subsection.4.3}% 
-\contentsline {subsection}{\numberline {4.4}LED color switching}{15}{subsection.4.4}% 
-\contentsline {subsection}{\numberline {4.5}Flow Diagram for \texttt {AcquireADCTask}}{16}{subsection.4.5}% 
+\contentsline {subsection}{\numberline {4.2}The PSM}{13}{subsection.4.2}% 
+\contentsline {subsection}{\numberline {4.3}The modified \texttt {dpm\_simulator}}{14}{subsection.4.3}% 
+\contentsline {subsection}{\numberline {4.4}The \emph {Correlated} workload profiles}{15}{subsection.4.4}% 
+\contentsline {subsubsection}{\numberline {4.4.1}Active Periods | Low Utilization | High Utilization}{15}{subsubsection.4.4.1}% 
+\contentsline {subsubsection}{\numberline {4.4.2}Normal distribution | Exponential distribution | Tri-Modal distribution}{15}{subsubsection.4.4.2}% 
+\contentsline {subsubsection}{\numberline {4.4.3}Scatter plots of the correlated workloads | Coefficients definition}{15}{subsubsection.4.4.3}% 
+\contentsline {subsection}{\numberline {4.5}Sweeping the \texttt {Sleep} Prediction Threshold - \texttt {Python} Script}{15}{subsection.4.5}% 
+\contentsline {subsubsection}{\numberline {4.5.1}Correlated Low Utilization - Profile \#2}{17}{subsubsection.4.5.1}% 
+\contentsline {subsubsection}{\numberline {4.5.2}Correlated Exponential Distribution - Profile \#4}{17}{subsubsection.4.5.2}% 
+\contentsline {subsection}{\numberline {4.6}Conclusions}{17}{subsection.4.6}% 
