@@ -181,7 +181,14 @@ INPUT /usr/share/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/share/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ectt1200.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecti1000.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/./screenshots/OriginalImageArduino.jpg
+INPUT ./screenshots/OriginalImageArduino.jpg
+INPUT ./screenshots/OriginalImageArduino.jpg
+INPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/./screenshots/ColorReductionComparison.jpg
+INPUT ./screenshots/ColorReductionComparison.jpg
+INPUT ./screenshots/ColorReductionComparison.jpg
 INPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/Report.aux
 INPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/Report.out
 INPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/Report.out
@@ -193,5 +200,6 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb

@@ -1,0 +1,47 @@
+-- Titolo Lab2
+    -- Introduzione
+        (Spieghiamo la divisione in 2 parti dell'intero laboratorio e la struttura generale del report)
+    -- Prima parte (script matlab | Manipolazione immagini | Grafici | Osservazioni sui grafici)
+        -- Introduzione allo script 
+            (Breve spiegazione di come abbiamo organizzato lo script, i.e. spighiamo che abbiamo voluto automatizzare il tutto e che abbiamo sfruttato più strutture dati possibili salvate in memoria per poter salvare e comparare ogni step delle modifiche che abbiamo fatto)
+        -- Power Consumption estimation
+            (Spieghiamo come abbiamo implementato la sezione dello script che calcola la power consumption con tutti i dubbi e problemi avuti (penso nessuno))
+        -- Distortion Estimation 
+            (Breve introduzione: diciamo che ci sono due metodi principali per calcolare la distortion)
+            -- Euclidean Distance
+                (Spieghiamo cosa abbiamo capito dell'Eucl. distance e come abbiamo implementato la cosa nello script)
+            -- SSIM
+                (Spieghiamo cosa abbiamo capito della SSIM e come abbiamo implementato la cosa nello script, ricordiamoci di dire che l'immagine andava trasformata da RGB a LAB)
+        -- Image Manipulations
+            (Breve introduzione: diciamo che abbiamo implementato 3 metodi principali e che i risultati verranno trattati dopo)
+            -- Color Manipulations
+                (Spieghiamo come abbiamo implementato le funzioni dello script che manipolano i colori)
+                -- Results of Color Manipulations
+                    (Mettiamo qualche comparazione di foto come esempio di "buona" manipolazione e "distruttiva" manipolazione. In queste sezioni facciamo solo considerazioni sulla qualità dell'immagine, lasciamo le considerazioni energetiche all'ultimo)
+            -- Histogram Equalization
+                (Spieghiamo come abbiamo implementato questa parte, come prima)
+                -- Results of Histogram Equalization
+                    (Come prima, mettiamo delle comparazioni tra il prima e il dopo e facciamo solo considerazioni sulla qualità dell'immagine)
+            -- Luminance Reduction
+                (Spieghiamo come abbiamo implementato questa parte, come prima)
+                -- Results of Luminance Reduction
+                    (Come prima, mettiamo delle comparazioni tra il prima e il dopo e facciamo solo considerazioni sulla qualità dell'immagine)
+        -- Plot creation
+            (Breve introduzione: spieghiamo che da ora in poi discuteremo i risultati ottenuti facendo considerazioni anche sulle power savinge ottenute)
+            -- Color Manipulations Plots
+                (Mostriamo i plot che confrontano tutte le immagini allo stesso momento sul piano energetico e sulla similarity, cerchiamo di fare considerazioni prima specifiche sulle singole immagini più critiche e poi più in generale. Commentiamo i risultati)
+            -- Histogram Manipulations Plots
+                (Come prima)
+            -- Luminance Reduction Plots
+                (Come prima)
+    -- Seconda parte (script matlab che invia i dati ad arduino | programma arduino | Manipolazione immagini su arduino | Commenti)
+        -- Introduzione allo script
+            (Breve spiegazione di come abbiamo organizzato lo script)
+        -- Image transformation prior image transmission
+            (Spieghiamo come abbiamo manipolato l'immagine (da 8 a 6 bit ecc) per poterla inviare poi via seriale)
+        -- Sending the image
+            (Spieghiamo come abbiamo inviato l'immagine lato matlab, spieghiamo come abbiamo ricevuto lato arduino, difficoltà ecc)
+        -- Manipulating the image Arduino-side
+            (Spieghiamo come abbiamo implementato una funzione che faccia la color manipulation direttamente su arduino e spieghiamo le differenze con la stessa operazione fatta però su matlab)
+        -- Final comments
+            (Boh qualcosa ci mettiamo, non strettamente necessaria)
