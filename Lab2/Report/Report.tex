@@ -1,0 +1,105 @@
+\documentclass[a4paper]{article}
+    \usepackage{titlesec}
+    \setcounter{secnumdepth}{4}
+    \titleformat{\paragraph}
+    {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+    \titlespacing*{\paragraph}
+    {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+    \usepackage[T1]{fontenc}    %Codifica dei font
+    \usepackage[utf8]{inputenc} %Lettere accentate da tastiera
+    \usepackage[english]{babel} %Lingua del documento
+    \usepackage{tabularx}       % extra features for tabular environment
+    \usepackage{booktabs}
+    \usepackage[table,xcdraw]{xcolor}
+    \usepackage{siunitx}
+    \usepackage{fancyvrb}
+    \sisetup{output-decimal-marker={,}}
+    \usepackage{graphicx} % takes care of graphic including machinery
+    \usepackage[margin=0.75in,a4paper]{geometry} % decreases margins
+    \usepackage[final]{hyperref} % adds hyper links inside the generated pdf file
+    % \usepackage{minted}
+
+    \newcommand{\polito }{\emph{Politecnico di Torino}}
+    \newcommand{\oses}{\emph{Energy Management for IoT}}
+
+
+    \begin{document}
+    \title{
+        Energy Management for IoT - Report Lab 02 \\[0.5cm]
+        \includegraphics[width=0.15\textwidth]{PoliLogo.png}%
+    }
+    \author{Flavia Caforio (s257750) - Samuele Yves Cerini (s256813)}
+    \date{\today}
+    \maketitle
+
+    \tableofcontents
+
+%   _____ _   _ _______ _____   ____  _____  _    _  _____ _______ _____ ____  _   _
+%  |_   _| \ | |__   __|  __ \ / __ \|  __ \| |  | |/ ____|__   __|_   _/ __ \| \ | |
+%    | | |  \| |  | |  | |__) | |  | | |  | | |  | | |       | |    | || |  | |  \| |
+%    | | | . ` |  | |  |  _  /| |  | | |  | | |  | | |       | |    | || |  | | . ` |
+%   _| |_| |\  |  | |  | | \ \| |__| | |__| | |__| | |____   | |   _| || |__| | |\  |
+%  |_____|_| \_|  |_|  |_|  \_\\____/|_____/ \____/ \_____|  |_|  |_____\____/|_| \_|
+%
+\section{Introduction}
+    The goal of this second laboratory is to demonstrate how image manipulation can be used to tradeoff image quality to reduce the energy power consumption in emissive displays, like OLED ones. We will implement and test different techniques to modify a set of demonstrative images: we will evaluate the effect of the modifications both qualitatively and quantitatively. Finally we will also evaluate the gains (if any) in terms of power consumption, trying to define a trade-off between the image quality and the gains obtained in terms of power consumption. Finally, as an additional requirement, we will visualize these images onto a proper OLED (thus, emissive) display.
+    The overall laboratory, and hence, the report, is divided into 2 main parts:
+    \begin{itemize}
+        \item Image manipulation, Distortion estimation and Power consumption
+        \item Interfacing with the external OLED display and image manipulation on-the-edge
+    \end{itemize}
+
+%   _____           _     __
+%  |  __ \         | |   /_ |
+%  | |__) |_ _ _ __| |_   | |
+%  |  ___/ _` | '__| __|  | |
+%  | |  | (_| | |  | |_   | |
+%  |_|   \__,_|_|   \__|  |_|
+%
+\section{Part 1: Image Manipulation | Distortion Estimation | Power Consumption}
+
+    \subsection{The \texttt{MATLAB} Script}
+
+    \subsection{Power Consumption Estimation}
+
+    \subsection{Distortion Estimation}
+
+        \subsubsection{Euclidean Distance}
+
+        \subsubsection{SSIM}
+
+    \subsection{Image Manipulations}
+        \subsubsection{Colors Manipulation}
+            \paragraph{Results}
+        \subsubsection{Histogram Equalization}
+            \paragraph{Results}
+        \subsubsection{Luminance Reduction}
+            \paragraph{Results}
+
+    \subsection{Plot Creation}
+        \subsubsection{Color Manipulations Plots}
+        \subsubsection{Color Manipulations Plots}
+        \subsubsection{Color Manipulations Plots}
+
+%   _____           _     ___
+%  |  __ \         | |   |__ \
+%  | |__) |_ _ _ __| |_     ) |
+%  |  ___/ _` | '__| __|   / /
+%  | |  | (_| | |  | |_   / /_
+%  |_|   \__,_|_|   \__| |____|
+%
+\section{Part 2: Interfacing w/ an external OLED display | Image manipulation on-the-edge}
+
+
+    \subsection{The \texttt{MATLAB} Script}
+        \subsubsection{Image Manipulation Prior Transfer}
+        \subsubsection{Serial Communication}
+
+    \subsection{The Arduino Program}
+        \subsubsection{Image Reception}
+        \subsubsection{Image Manipulation}
+
+    \subsection{Final Comments}
+
+\end{document}
