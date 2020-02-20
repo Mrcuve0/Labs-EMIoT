@@ -1,5 +1,7 @@
 function imagePercSavingsBar(collection_power_savings, collection_distances, mode)
 
+NUM_IMAGES = 20;
+
 switch mode
     
     % Color Reduction: SSIM
@@ -7,7 +9,7 @@ switch mode
         Y_power = [];
         Y_distances = [];
 
-        for i_image = 1:15
+        for i_image = 1:NUM_IMAGES
 
             figure
             for i_perc = 1:10
@@ -23,12 +25,14 @@ switch mode
             b = bar(x_axis, Y_power);
             % xticks(1:10:100)
             ylabel('Energy Savings -- (%)');
+            ylim([0 100])
 
             yyaxis right
             p = plot(x_axis, Y_distances, "-o")
             p.LineWidth = 2;
             % xticks(1:1:10)
             % xlim([1 10])
+            ylim([0 100])
 
             title('Energy Savings @ different Color Reductions');
             xlabel('Color Reduction -- (%)');
@@ -43,7 +47,7 @@ switch mode
         Y_power = [];
         Y_distances = [];
 
-        for i_image = 1:15
+        for i_image = 1:NUM_IMAGES
 
             figure
             for i_perc = 1:10
@@ -59,12 +63,14 @@ switch mode
             b = bar(x_axis, Y_power);
             % xticks(1:10:100)
             ylabel('Energy Savings -- (%)');
+            ylim([0 100])
 
             yyaxis right
             p = plot(x_axis, Y_distances, "-o")
             p.LineWidth = 2;
             % xticks(1:1:10)
             % xlim([1 10])
+            ylim([0 100])
 
             title('Energy Savings @ different Color Reductions');
             xlabel('Color Reduction -- (%)');
@@ -80,7 +86,7 @@ switch mode
         Y_power = [];
         Y_distances = [];
 
-        for i_image = 1:15
+        for i_image = 1:NUM_IMAGES
 
             figure
             for i_perc = 1:10
@@ -94,12 +100,14 @@ switch mode
             b = bar(x_axis, Y_power);
             % xticks(1:10:100)
             ylabel('Energy Savings -- (%)');
+            ylim([0 100])
 
             yyaxis right
             p = plot(x_axis, Y_distances, "-o")
             p.LineWidth = 2;
             % xticks(1:1:10)
             % xlim([1 10])
+            ylim([0 100])
 
             title('Energy Savings @ different Luminance Reductions');
             xlabel('Luminance Reduction -- (%)');
@@ -114,7 +122,7 @@ switch mode
         Y_power = [];
         Y_distances = [];
 
-        for i_image = 1:15
+        for i_image = 1:NUM_IMAGES
 
             figure
             for i_perc = 1:10
@@ -128,12 +136,14 @@ switch mode
             b = bar(x_axis, Y_power);
             % xticks(1:10:100)
             ylabel('Energy Savings -- (%)');
+            ylim([0 100])
 
             yyaxis right
             p = plot(x_axis, Y_distances, "-o")
             p.LineWidth = 2;
             % xticks(1:1:10)
             % xlim([1 10])
+            ylim([0 100])
 
             title('Energy Savings @ different Luminance Reductions');
             xlabel('Luminance Reduction -- (%)');

@@ -1,8 +1,8 @@
 PWD /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/Report.tex
-OUTPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/Report.log
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.tex
+OUTPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.log
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/size10.clo
@@ -113,9 +113,9 @@ INPUT /usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
 INPUT /usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
 INPUT /usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 INPUT /usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
-INPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/Report.aux
-INPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/Report.aux
-OUTPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/Report.aux
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.aux
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.aux
+OUTPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.aux
 INPUT /usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
@@ -134,14 +134,14 @@ INPUT /usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 INPUT /usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-INPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/Report.out
-INPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/Report.out
-INPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/Report.out
-INPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/Report.out
-OUTPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/Report.pdf
-INPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/Report.out
-INPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/Report.out
-OUTPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/Report.out
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.out
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.out
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.out
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.out
+OUTPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.pdf
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.out
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.out
+OUTPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.out
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
@@ -149,9 +149,9 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm1728.tfm
-INPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/PoliLogo.png
-INPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/PoliLogo.png
-INPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/PoliLogo.png
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/PoliLogo.png
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/PoliLogo.png
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/PoliLogo.png
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
@@ -170,29 +170,64 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm1440.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm
-INPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/Report.toc
-INPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/Report.toc
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.toc
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.toc
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm
 INPUT /usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm
-OUTPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/Report.toc
+OUTPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.toc
 INPUT /usr/share/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/share/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ectt1200.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecti1000.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/./screenshots/OriginalImageArduino.jpg
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/./screenshots/ColorReductionOverall.png
+INPUT ./screenshots/ColorReductionOverall.png
+INPUT ./screenshots/ColorReductionOverall.png
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/./screenshots/color_reduction_20perc_img_11.jpg
+INPUT ./screenshots/color_reduction_20perc_img_11.jpg
+INPUT ./screenshots/color_reduction_20perc_img_11.jpg
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/./screenshots/color_reduction_20perc_img_2.jpg
+INPUT ./screenshots/color_reduction_20perc_img_2.jpg
+INPUT ./screenshots/color_reduction_20perc_img_2.jpg
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/./screenshots/img2_EUCLvSSIM.png
+INPUT ./screenshots/img2_EUCLvSSIM.png
+INPUT ./screenshots/img2_EUCLvSSIM.png
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/./screenshots/HistEqOverall.png
+INPUT ./screenshots/HistEqOverall.png
+INPUT ./screenshots/HistEqOverall.png
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/./screenshots/hist_equalization_RGB_img_2.png
+INPUT ./screenshots/hist_equalization_RGB_img_2.png
+INPUT ./screenshots/hist_equalization_RGB_img_2.png
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/./screenshots/hist_equalization_RGB_img_13.png
+INPUT ./screenshots/hist_equalization_RGB_img_13.png
+INPUT ./screenshots/hist_equalization_RGB_img_13.png
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/./screenshots/LuminanceReductionOverall.png
+INPUT ./screenshots/LuminanceReductionOverall.png
+INPUT ./screenshots/LuminanceReductionOverall.png
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/./screenshots/img11_COLvLUM.png
+INPUT ./screenshots/img11_COLvLUM.png
+INPUT ./screenshots/img11_COLvLUM.png
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/./screenshots/luminance_reduction_10perc_img_18.png
+INPUT ./screenshots/luminance_reduction_10perc_img_18.png
+INPUT ./screenshots/luminance_reduction_10perc_img_18.png
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/./screenshots/ImagePercSavingsBar_LUMRED_SSIM_img_18.jpg
+INPUT ./screenshots/ImagePercSavingsBar_LUMRED_SSIM_img_18.jpg
+INPUT ./screenshots/ImagePercSavingsBar_LUMRED_SSIM_img_18.jpg
+INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecti1000.tfm
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/./screenshots/OriginalImageArduino.jpg
 INPUT ./screenshots/OriginalImageArduino.jpg
 INPUT ./screenshots/OriginalImageArduino.jpg
-INPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/./screenshots/ColorReductionComparison.jpg
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/./screenshots/ColorReductionComparison.jpg
 INPUT ./screenshots/ColorReductionComparison.jpg
 INPUT ./screenshots/ColorReductionComparison.jpg
-INPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/Report.aux
-INPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/Report.out
-INPUT /home/sem/OneDrive/Politecnico di Torino/01 - Magistrale/Anno 2 -- 2019-2020/Primo Semestre/Energy Management for IoT/Labs/Lab2/Report/Report.out
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.aux
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.out
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.out
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb

@@ -16,12 +16,11 @@
 \contentsline {subsection}{\numberline {2.5}Plot Creation}{2}{subsection.2.5}% 
 \contentsline {subsubsection}{\numberline {2.5.1}Color Manipulations Plots}{2}{subsubsection.2.5.1}% 
 \contentsline {subsubsection}{\numberline {2.5.2}Histogram Equalization Plots}{2}{subsubsection.2.5.2}% 
-\contentsline {subsubsection}{\numberline {2.5.3}Luminance Reduction Plots}{2}{subsubsection.2.5.3}% 
-\contentsline {section}{\numberline {3}Part 2: Interfacing w/ an external OLED display | Image manipulation on-the-edge}{2}{section.3}% 
-\contentsline {subsection}{\numberline {3.1}The \texttt {MATLAB} Script}{2}{subsection.3.1}% 
-\contentsline {subsubsection}{\numberline {3.1.1}Image Manipulation Prior Transfer}{2}{subsubsection.3.1.1}% 
-\contentsline {subsubsection}{\numberline {3.1.2}Serial Communication}{3}{subsubsection.3.1.2}% 
-\contentsline {subsection}{\numberline {3.2}The Arduino Program}{3}{subsection.3.2}% 
-\contentsline {subsubsection}{\numberline {3.2.1}Image Reception}{3}{subsubsection.3.2.1}% 
-\contentsline {subsubsection}{\numberline {3.2.2}Image Manipulation}{3}{subsubsection.3.2.2}% 
-\contentsline {subsection}{\numberline {3.3}Final Comments}{4}{subsection.3.3}% 
+\contentsline {subsubsection}{\numberline {2.5.3}Luminance Reduction Plots}{5}{subsubsection.2.5.3}% 
+\contentsline {section}{\numberline {3}Part 2: Interfacing w/ an external OLED display | Image manipulation on-the-edge}{5}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}The \texttt {MATLAB} Script}{8}{subsection.3.1}% 
+\contentsline {subsubsection}{\numberline {3.1.1}Image Manipulation Prior Transfer}{8}{subsubsection.3.1.1}% 
+\contentsline {subsubsection}{\numberline {3.1.2}Serial Communication}{8}{subsubsection.3.1.2}% 
+\contentsline {subsection}{\numberline {3.2}The Arduino Program}{8}{subsection.3.2}% 
+\contentsline {subsubsection}{\numberline {3.2.1}Image Reception}{9}{subsubsection.3.2.1}% 
+\contentsline {subsubsection}{\numberline {3.2.2}Image Manipulation}{9}{subsubsection.3.2.2}% 

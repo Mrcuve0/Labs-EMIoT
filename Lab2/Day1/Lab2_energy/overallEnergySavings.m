@@ -1,21 +1,23 @@
 function overallEnergySavings(collection_power_savings, eucl, ssim, mode)
 
+NUM_IMAGES = 20;
+
     switch mode
         case 0
             Y = [];
-            x_axis = linspace(1, 15, 15);
+            x_axis = linspace(1, NUM_IMAGES, NUM_IMAGES);
             figure
 
             for iterations = 1:10
 
-                for i = 1:15
+                for i = 1:NUM_IMAGES
                     Y(i) = collection_power_savings{iterations}{i};
                 end
                 
                 hold on
                 plot(x_axis, Y, '-o', 'DisplayName', int2str(iterations*10) + "%")
-                xticks(1:1:15)
-                xlim([1 15])
+                xticks(1:1:NUM_IMAGES)
+                xlim([1 NUM_IMAGES])
                 title('Energy Savings w/ different Color Reduction intensity');
                 xlabel('Image #');
                 ylabel('Energy Savings w.r.t. Original Image -- (%)');
@@ -32,11 +34,11 @@ function overallEnergySavings(collection_power_savings, eucl, ssim, mode)
             saveas(gcf, "./Results/ColorReduction/svg/EnergySavingsPerImage.svg");
 
         case 1
-            x_axis = linspace(1, 15, 15);
+            x_axis = linspace(1, NUM_IMAGES, NUM_IMAGES);
             Y = [];
             Y_1 = [];
             Y_2 = [];
-            for i = 1:15
+            for i = 1:NUM_IMAGES
                 Y(i) = collection_power_savings{i};
                 Y_1(i) = ssim{i}*100;
                 Y_2(i) = eucl{i};
@@ -49,9 +51,9 @@ function overallEnergySavings(collection_power_savings, eucl, ssim, mode)
             
             subplot(1, 3, 1);
             bar(x_axis, Y)
-            xticks(1:1:15)
+            xticks(1:1:NUM_IMAGES)
             yticks(-160:10:100)
-            % xlim([1 15])
+            % xlim([1 NUM_IMAGES])
             ylim([-160 100])
             
             xlabel('Image #');
@@ -78,19 +80,19 @@ function overallEnergySavings(collection_power_savings, eucl, ssim, mode)
             
         case 2
             Y = [];
-            x_axis = linspace(1, 15, 15);
+            x_axis = linspace(1, NUM_IMAGES, NUM_IMAGES);
             figure
 
             for iterations = 1:10
 
-                for i = 1:15
+                for i = 1:NUM_IMAGES
                     Y(i) = collection_power_savings{iterations}{i};
                 end
                 
                 hold on
                 plot(x_axis, Y, '-o', 'DisplayName', int2str(iterations*10) + "%");
-                xticks(1:1:15)
-                xlim([1 15])
+                xticks(1:1:NUM_IMAGES)
+                xlim([1 NUM_IMAGES])
                 title('Energy Savings w/ different Luminance Reduction intensity');
                 xlabel('Image #');
                 ylabel('Energy Savings w.r.t. Original Image -- (%)');

@@ -3,6 +3,8 @@ close all
 clc
 format long
 
+NUM_IMAGES = 20
+
 % Original version
 original_vector_images = [];
 original_vector_images_lab = [];
@@ -19,7 +21,7 @@ vector_ssim_distances = [];
 vector_power_savings = [];
 
 % Reading images
-for i = 1:1:15
+for i = 1:1:NUM_IMAGES
     
     % Reading images
     original_vector_images{i} = imread("images/img_" + num2str(i) + ".tiff");
@@ -50,7 +52,7 @@ collection_lum_reduced_power_savings = {};
 for iterations = 1:10
     
     eps = [];
-    for i = 1:1:15
+    for i = 1:1:NUM_IMAGES
 
         img = original_vector_images{i};
         if i == 1
@@ -69,7 +71,7 @@ for iterations = 1:10
     end 
 
     % Distortion and Power savings computations
-    for i = 1:1:15
+    for i = 1:1:NUM_IMAGES
 
         % Compute distortion between original and modified images
         eps{i} = eucl_dist(original_vector_images_lab{i}, modified_vector_images_lab{i});
@@ -92,7 +94,7 @@ for iterations = 1:10
 end
 
 % Histogram Equalization
-for i = 1:1:15
+for i = 1:1:NUM_IMAGES
 
     HSV_img = rgb2hsv(original_vector_images{i});
     temp = HSV_img(:, :, 3);
@@ -105,7 +107,7 @@ for i = 1:1:15
     modified_vector_images{i} = im2uint8(collection_hist_equalized_images{i});
     
     % PRINT
-    % color_histogram_graph(original_vector_images{i}, collection_hist_equalized_images{i}, i);
+    color_histogram_graph(original_vector_images{i}, collection_hist_equalized_images{i}, i);
 
     % RGB-2-LAB
     modified_vector_images_lab{i} = rgb2lab(collection_hist_equalized_images{i});
@@ -128,7 +130,7 @@ end
 
 % Luminance Reduction
 for iterations = 1:10
-    for i = 1:1:15
+    for i = 1:1:NUM_IMAGES
         HSV_img = rgb2hsv(original_vector_images{i});
 
         % Apply reduction on luminance
@@ -137,7 +139,7 @@ for iterations = 1:10
 
     end
     
-    for i = 1:1:15
+    for i = 1:1:NUM_IMAGES
         % RGB-2-LAB
         modified_vector_images_lab{i} = rgb2lab(modified_vector_images{i});
 
@@ -151,7 +153,7 @@ for iterations = 1:10
         vector_ssim_distances{i} = ssim(modified_vector_images{i}, original_vector_images{i});
         
         % PRINT the original alongside the modified image
-        % colorReductionComparison(original_vector_images{i}, modified_vector_images{i}, i, iterations, 1);
+        colorReductionComparison(original_vector_images{i}, modified_vector_images{i}, i, iterations, 1);
     end
     
     collection_lum_reduced_eucl_distances{iterations} = vector_eucl_distances;
@@ -164,11 +166,11 @@ end
 % Uncomment to create plots related to energy consumption and image similarity
 
 % PRINT -- Color Reduction: Comparisons (sweep)
-% overallEnergySavings(collection_color_reduced_power_savings, {}, {}, 0);
+overallEnergySavings(collection_color_reduced_power_savings, {}, {}, 0);
 % PRINT -- Color Reduction: SSIM
-% imagePercSavingsBar(collection_color_reduced_power_savings, collection_color_reduced_ssim_distances, 0);
+imagePercSavingsBar(collection_color_reduced_power_savings, collection_color_reduced_ssim_distances, 0);
 % PRINT -- Color Reduction: Euclidean Distance
-% imagePercSavingsBar(collection_color_reduced_power_savings, collection_color_reduced_eucl_distances , 1);
+imagePercSavingsBar(collection_color_reduced_power_savings, collection_color_reduced_eucl_distances , 1);
 
 % PRINT -- Histogram Equalization: Energy Savings per Image
 % overallEnergySavings(collection_hist_equalized_power_savings, collection_hist_equalized_eucl_distances, collection_hist_equalized_ssim_distances, 1);
