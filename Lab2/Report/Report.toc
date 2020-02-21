@@ -15,12 +15,13 @@
 \contentsline {paragraph}{\numberline {2.4.3.1}Results}{2}{paragraph.2.4.3.1}% 
 \contentsline {subsection}{\numberline {2.5}Plot Creation}{2}{subsection.2.5}% 
 \contentsline {subsubsection}{\numberline {2.5.1}Color Manipulations Plots}{2}{subsubsection.2.5.1}% 
-\contentsline {subsubsection}{\numberline {2.5.2}Histogram Equalization Plots}{2}{subsubsection.2.5.2}% 
+\contentsline {subsubsection}{\numberline {2.5.2}Histogram Equalization Plots}{4}{subsubsection.2.5.2}% 
 \contentsline {subsubsection}{\numberline {2.5.3}Luminance Reduction Plots}{5}{subsubsection.2.5.3}% 
-\contentsline {section}{\numberline {3}Part 2: Interfacing w/ an external OLED display | Image manipulation on-the-edge}{5}{section.3}% 
+\contentsline {subsubsection}{\numberline {2.5.4}Conclusions}{7}{subsubsection.2.5.4}% 
+\contentsline {section}{\numberline {3}Part 2: Interfacing w/ an external OLED display | Image manipulation on-the-edge}{8}{section.3}% 
 \contentsline {subsection}{\numberline {3.1}The \texttt {MATLAB} Script}{8}{subsection.3.1}% 
 \contentsline {subsubsection}{\numberline {3.1.1}Image Manipulation Prior Transfer}{8}{subsubsection.3.1.1}% 
 \contentsline {subsubsection}{\numberline {3.1.2}Serial Communication}{8}{subsubsection.3.1.2}% 
-\contentsline {subsection}{\numberline {3.2}The Arduino Program}{8}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.2}The Arduino Program}{9}{subsection.3.2}% 
 \contentsline {subsubsection}{\numberline {3.2.1}Image Reception}{9}{subsubsection.3.2.1}% 
 \contentsline {subsubsection}{\numberline {3.2.2}Image Manipulation}{9}{subsubsection.3.2.2}% 

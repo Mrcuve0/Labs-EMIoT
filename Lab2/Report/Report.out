@@ -13,10 +13,11 @@
 \BOOKMARK [3][-]{subsubsection.2.5.1}{Color Manipulations Plots}{subsection.2.5}% 13
 \BOOKMARK [3][-]{subsubsection.2.5.2}{Histogram Equalization Plots}{subsection.2.5}% 14
 \BOOKMARK [3][-]{subsubsection.2.5.3}{Luminance Reduction Plots}{subsection.2.5}% 15
-\BOOKMARK [1][-]{section.3}{Part 2: Interfacing w/ an external OLED display | Image manipulation on-the-edge}{}% 16
-\BOOKMARK [2][-]{subsection.3.1}{The MATLAB Script}{section.3}% 17
-\BOOKMARK [3][-]{subsubsection.3.1.1}{Image Manipulation Prior Transfer}{subsection.3.1}% 18
-\BOOKMARK [3][-]{subsubsection.3.1.2}{Serial Communication}{subsection.3.1}% 19
-\BOOKMARK [2][-]{subsection.3.2}{The Arduino Program}{section.3}% 20
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Image Reception}{subsection.3.2}% 21
-\BOOKMARK [3][-]{subsubsection.3.2.2}{Image Manipulation}{subsection.3.2}% 22
+\BOOKMARK [3][-]{subsubsection.2.5.4}{Conclusions}{subsection.2.5}% 16
+\BOOKMARK [1][-]{section.3}{Part 2: Interfacing w/ an external OLED display | Image manipulation on-the-edge}{}% 17
+\BOOKMARK [2][-]{subsection.3.1}{The MATLAB Script}{section.3}% 18
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Image Manipulation Prior Transfer}{subsection.3.1}% 19
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Serial Communication}{subsection.3.1}% 20
+\BOOKMARK [2][-]{subsection.3.2}{The Arduino Program}{section.3}% 21
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Image Reception}{subsection.3.2}% 22
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Image Manipulation}{subsection.3.2}% 23

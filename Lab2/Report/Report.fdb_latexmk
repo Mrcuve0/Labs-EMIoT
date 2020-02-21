@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1582232881 "/home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.tex" "/home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.pdf" "Report" 1582232884
+["pdflatex"] 1582300475 "/home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.tex" "/home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.pdf" "Report" 1582300477
   "/dev/null" 1582222892 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/home/sem/Desktop/EMIoT/Labs/Lab2/Report/./screenshots/ColorReductionComparison.jpg" 1582143043 302895 a534e6af45885a34888dd1b1ddb06d15 ""
   "/home/sem/Desktop/EMIoT/Labs/Lab2/Report/./screenshots/ColorReductionOverall.png" 1582224422 163360 fde31ca8af2a0e059afea676e04eda48 ""
@@ -15,10 +15,10 @@
   "/home/sem/Desktop/EMIoT/Labs/Lab2/Report/./screenshots/img2_EUCLvSSIM.png" 1582218679 151217 798d1f4fbb18dcd554c4f16644eb2298 ""
   "/home/sem/Desktop/EMIoT/Labs/Lab2/Report/./screenshots/luminance_reduction_10perc_img_18.png" 1582232353 73485 e9359bc3158b1830ee83790a4ad08125 ""
   "/home/sem/Desktop/EMIoT/Labs/Lab2/Report/PoliLogo.png" 1582111317 315881 bac871f6973bca8f6d229783f49f73b6 ""
-  "/home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.aux" 1582232884 11751 1425b9a11caa8314bf98e02492d40e3f "pdflatex"
-  "/home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.out" 1582232884 1711 5edd5b4d253c68f0d8a56f7d4834f05d "pdflatex"
-  "/home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.tex" 1582232877 28587 9500db5c0032087f43c9ef0a2d377aa3 ""
-  "/home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.toc" 1582232884 2389 9a3b163666775715be52ee669a33335c "pdflatex"
+  "/home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.aux" 1582300477 11931 4a616e66a83c3b3fdab346badeef2eb5 "pdflatex"
+  "/home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.out" 1582300477 1782 f0627d646b4d2eb34b42a0028ee1c836 "pdflatex"
+  "/home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.tex" 1582300471 31341 eb4c6e7b88fae33d8c7de01d879e349f ""
+  "/home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.toc" 1582300477 2477 6ebf45bd4e0f1c0906bc07ab306dd210 "pdflatex"
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1572595918 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1572595918 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1572595918 3584 2d666ecf6d466d8b007246bc2f94d9da ""
@@ -138,6 +138,6 @@
   (generated)
   "/home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.log"
   "/home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.out"
-  "/home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.pdf"
-  "/home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.toc"
   "/home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.aux"
+  "/home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.toc"
+  "/home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.pdf"

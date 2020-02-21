@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.2.8)  20 FEB 2020 22:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.2.8)  21 FEB 2020 16:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -656,7 +656,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 27.
-<PoliLogo.png, id=92, 1027.84pt x 1027.84pt>
+<PoliLogo.png, id=96, 1027.84pt x 1027.84pt>
 File: PoliLogo.png Graphic file (type png)
 <use PoliLogo.png>
 Package pdftex.def Info: PoliLogo.png  used on input line 35.
@@ -686,105 +686,99 @@ LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/sem/Desktop/EMIoT/Labs/Lab2/Report/PoliLogo.png>]
-<./screenshots/ColorReductionOverall.png, id=131, 1163.84813pt x 656.4525pt>
+<./screenshots/ColorReductionOverall.png, id=136, 1163.84813pt x 656.4525pt>
 File: ./screenshots/ColorReductionOverall.png Graphic file (type png)
 <use ./screenshots/ColorReductionOverall.png>
 Package pdftex.def Info: ./screenshots/ColorReductionOverall.png  used on input line 88.
 (pdftex.def)             Requested size: 489.10287pt x 275.86844pt.
-<./screenshots/color_reduction_20perc_img_11.jpg, id=133, 594.72188pt x 260.47313pt>
+<./screenshots/color_reduction_20perc_img_11.jpg, id=138, 594.72188pt x 260.47313pt>
 File: ./screenshots/color_reduction_20perc_img_11.jpg Graphic file (type jpg)
 <use ./screenshots/color_reduction_20perc_img_11.jpg>
-Package pdftex.def Info: ./screenshots/color_reduction_20perc_img_11.jpg  used on input line 99.
+Package pdftex.def Info: ./screenshots/color_reduction_20perc_img_11.jpg  used on input line 101.
 (pdftex.def)             Requested size: 293.4647pt x 128.5272pt.
-<./screenshots/color_reduction_20perc_img_2.jpg, id=134, 590.95781pt x 252.945pt>
+<./screenshots/color_reduction_20perc_img_2.jpg, id=139, 590.95781pt x 252.945pt>
 File: ./screenshots/color_reduction_20perc_img_2.jpg Graphic file (type jpg)
 <use ./screenshots/color_reduction_20perc_img_2.jpg>
-Package pdftex.def Info: ./screenshots/color_reduction_20perc_img_2.jpg  used on input line 108.
+Package pdftex.def Info: ./screenshots/color_reduction_20perc_img_2.jpg  used on input line 110.
 (pdftex.def)             Requested size: 293.4647pt x 125.61148pt.
-<./screenshots/img2_EUCLvSSIM.png, id=136, 1215.03937pt x 460.72125pt>
+<./screenshots/img2_EUCLvSSIM.png, id=141, 1215.03937pt x 460.72125pt>
 File: ./screenshots/img2_EUCLvSSIM.png Graphic file (type png)
 <use ./screenshots/img2_EUCLvSSIM.png>
-Package pdftex.def Info: ./screenshots/img2_EUCLvSSIM.png  used on input line 119.
+Package pdftex.def Info: ./screenshots/img2_EUCLvSSIM.png  used on input line 121.
 (pdftex.def)             Requested size: 391.28378pt x 148.36177pt.
-
-
-LaTeX Warning: Reference `figHistEqOverall' on page 2 undefined on input line 132.
-
-[2] [3 <./screenshots/ColorReductionOverall.png (PNG copy)> <./screenshots/color_reduction_20perc_img_11.jpg> <./screenshots/color_reduction_20perc_img_2.jpg>]
-<./screenshots/HistEqOverall.png, id=158, 1046.40938pt x 562.35094pt>
+ [2] [3 <./screenshots/ColorReductionOverall.png (PNG copy)> <./screenshots/color_reduction_20perc_img_11.jpg> <./screenshots/color_reduction_20perc_img_2.jpg>]
+<./screenshots/HistEqOverall.png, id=164, 1046.40938pt x 562.35094pt>
 File: ./screenshots/HistEqOverall.png Graphic file (type png)
 <use ./screenshots/HistEqOverall.png>
-Package pdftex.def Info: ./screenshots/HistEqOverall.png  used on input line 137.
+Package pdftex.def Info: ./screenshots/HistEqOverall.png  used on input line 139.
 (pdftex.def)             Requested size: 391.28378pt x 210.27185pt.
-<./screenshots/hist_equalization_RGB_img_2.png, id=160, 538.26094pt x 499.11469pt>
+ [4 <./screenshots/img2_EUCLvSSIM.png (PNG copy)> <./screenshots/HistEqOverall.png (PNG copy)>]
+<./screenshots/hist_equalization_RGB_img_2.png, id=172, 538.26094pt x 499.11469pt>
 File: ./screenshots/hist_equalization_RGB_img_2.png Graphic file (type png)
 <use ./screenshots/hist_equalization_RGB_img_2.png>
-Package pdftex.def Info: ./screenshots/hist_equalization_RGB_img_2.png  used on input line 149.
+Package pdftex.def Info: ./screenshots/hist_equalization_RGB_img_2.png  used on input line 151.
 (pdftex.def)             Requested size: 293.4647pt x 272.12253pt.
-<./screenshots/hist_equalization_RGB_img_13.png, id=162, 539.01375pt x 505.13719pt>
+<./screenshots/hist_equalization_RGB_img_13.png, id=174, 539.01375pt x 505.13719pt>
 File: ./screenshots/hist_equalization_RGB_img_13.png Graphic file (type png)
 <use ./screenshots/hist_equalization_RGB_img_13.png>
-Package pdftex.def Info: ./screenshots/hist_equalization_RGB_img_13.png  used on input line 160.
+Package pdftex.def Info: ./screenshots/hist_equalization_RGB_img_13.png  used on input line 162.
 (pdftex.def)             Requested size: 293.4647pt x 275.02069pt.
- [4 <./screenshots/img2_EUCLvSSIM.png (PNG copy)> <./screenshots/HistEqOverall.png (PNG copy)>]
-<./screenshots/LuminanceReductionOverall.png, id=173, 1167.61218pt x 637.63219pt>
+<./screenshots/LuminanceReductionOverall.png, id=178, 1167.61218pt x 637.63219pt>
 File: ./screenshots/LuminanceReductionOverall.png Graphic file (type png)
 <use ./screenshots/LuminanceReductionOverall.png>
-Package pdftex.def Info: ./screenshots/LuminanceReductionOverall.png  used on input line 176.
+Package pdftex.def Info: ./screenshots/LuminanceReductionOverall.png  used on input line 178.
 (pdftex.def)             Requested size: 391.28378pt x 213.67863pt.
-<./screenshots/img11_COLvLUM.png, id=175, 1149.5447pt x 339.51843pt>
+<./screenshots/img11_COLvLUM.png, id=180, 1149.5447pt x 339.51843pt>
 File: ./screenshots/img11_COLvLUM.png Graphic file (type png)
 <use ./screenshots/img11_COLvLUM.png>
-Package pdftex.def Info: ./screenshots/img11_COLvLUM.png  used on input line 187.
+Package pdftex.def Info: ./screenshots/img11_COLvLUM.png  used on input line 189.
 (pdftex.def)             Requested size: 293.4647pt x 86.67189pt.
-<./screenshots/luminance_reduction_10perc_img_18.png, id=178, 531.48563pt x 308.65312pt>
+<./screenshots/luminance_reduction_10perc_img_18.png, id=183, 531.48563pt x 308.65312pt>
 File: ./screenshots/luminance_reduction_10perc_img_18.png Graphic file (type png)
 <use ./screenshots/luminance_reduction_10perc_img_18.png>
-Package pdftex.def Info: ./screenshots/luminance_reduction_10perc_img_18.png  used on input line 200.
+Package pdftex.def Info: ./screenshots/luminance_reduction_10perc_img_18.png  used on input line 202.
 (pdftex.def)             Requested size: 293.4647pt x 170.4285pt.
-<./screenshots/ImagePercSavingsBar_LUMRED_SSIM_img_18.jpg, id=179, 658.71094pt x 493.845pt>
+ [5 <./screenshots/hist_equalization_RGB_img_2.png (PNG copy)>] [6 <./screenshots/hist_equalization_RGB_img_13.png (PNG copy)> <./screenshots/LuminanceReductionOverall.png (PNG copy)> <./screenshots/img11_COLvLUM.png (PNG copy)>]
+<./screenshots/ImagePercSavingsBar_LUMRED_SSIM_img_18.jpg, id=197, 658.71094pt x 493.845pt>
 File: ./screenshots/ImagePercSavingsBar_LUMRED_SSIM_img_18.jpg Graphic file (type jpg)
 <use ./screenshots/ImagePercSavingsBar_LUMRED_SSIM_img_18.jpg>
-Package pdftex.def Info: ./screenshots/ImagePercSavingsBar_LUMRED_SSIM_img_18.jpg  used on input line 209.
+Package pdftex.def Info: ./screenshots/ImagePercSavingsBar_LUMRED_SSIM_img_18.jpg  used on input line 211.
 (pdftex.def)             Requested size: 293.4647pt x 220.0203pt.
- [5 <./screenshots/hist_equalization_RGB_img_2.png (PNG copy)>] [6 <./screenshots/hist_equalization_RGB_img_13.png (PNG copy)> <./screenshots/LuminanceReductionOverall.png (PNG copy)> <./screenshots/img11_COLvLUM.png (PNG copy)>] [7 <./screenshots/luminance_reduction_10perc_img_18.png (PNG copy)> <./screenshots/ImagePercSavingsBar_LUMRED_SSIM_img_18.jpg>] [8]
-<./screenshots/OriginalImageArduino.jpg, id=205, 777.90625pt x 565.11125pt>
+ [7 <./screenshots/luminance_reduction_10perc_img_18.png (PNG copy)> <./screenshots/ImagePercSavingsBar_LUMRED_SSIM_img_18.jpg>] [8]
+<./screenshots/OriginalImageArduino.jpg, id=212, 777.90625pt x 565.11125pt>
 File: ./screenshots/OriginalImageArduino.jpg Graphic file (type jpg)
 <use ./screenshots/OriginalImageArduino.jpg>
-Package pdftex.def Info: ./screenshots/OriginalImageArduino.jpg  used on input line 274.
+Package pdftex.def Info: ./screenshots/OriginalImageArduino.jpg  used on input line 288.
 (pdftex.def)             Requested size: 195.63815pt x 142.1225pt.
-<./screenshots/ColorReductionComparison.jpg, id=207, 714.67pt x 470.75874pt>
+ [9 <./screenshots/OriginalImageArduino.jpg>]
+<./screenshots/ColorReductionComparison.jpg, id=219, 714.67pt x 470.75874pt>
 File: ./screenshots/ColorReductionComparison.jpg Graphic file (type jpg)
 <use ./screenshots/ColorReductionComparison.jpg>
-Package pdftex.def Info: ./screenshots/ColorReductionComparison.jpg  used on input line 293.
+Package pdftex.def Info: ./screenshots/ColorReductionComparison.jpg  used on input line 307.
 (pdftex.def)             Requested size: 195.63815pt x 128.86644pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 300.
- [9 <./screenshots/OriginalImageArduino.jpg>] [10 <./screenshots/ColorReductionComparison.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 300.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 314.
+ [10 <./screenshots/ColorReductionComparison.jpg>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 314.
  (/home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 300.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 300.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 314.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 314.
 Package rerunfilecheck Info: File `Report.out' has not changed.
-(rerunfilecheck)             Checksum: 5EDD5B4D253C68F0D8A56F7D4834F05D;1711.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 300.
+(rerunfilecheck)             Checksum: F0627D646B4D2EB34B42A0028EE1C836;1782.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 314.
  ) 
 Here is how much of TeX's memory you used:
- 20286 strings out of 492167
- 381016 string characters out of 6131559
- 461864 words of memory out of 5000000
+ 20287 strings out of 492167
+ 381038 string characters out of 6131559
+ 461888 words of memory out of 5000000
  24439 multiletter control sequences out of 15000+600000
  544597 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,7n,67p,936b,752s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,7n,67p,982b,754s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on /home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.pdf (10 pages, 3154437 bytes).
+Output written on /home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.pdf (10 pages, 3156613 bytes).
 PDF statistics:
- 273 PDF objects out of 1000 (max. 8388607)
- 230 compressed objects within 3 object streams
- 49 named destinations out of 1000 (max. 500000)
- 247 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 280 PDF objects out of 1000 (max. 8388607)
+ 237 compressed objects within 3 object streams
+ 50 named destinations out of 1000 (max. 500000)
+ 255 words of extra memory for PDF output out of 10000 (max. 10000000)
 
