@@ -1,0 +1,23 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Part 1: Image Manipulation | Distortion Estimation | Power Consumption}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{The MATLAB Script}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Power Consumption Estimation}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Distortion Estimation}{section.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Euclidean Distance}{subsection.2.3}% 6
+\BOOKMARK [3][-]{subsubsection.2.3.2}{SSIM}{subsection.2.3}% 7
+\BOOKMARK [2][-]{subsection.2.4}{Image Manipulations}{section.2}% 8
+\BOOKMARK [3][-]{subsubsection.2.4.1}{Colors Manipulation}{subsection.2.4}% 9
+\BOOKMARK [3][-]{subsubsection.2.4.2}{Histogram Equalization}{subsection.2.4}% 10
+\BOOKMARK [3][-]{subsubsection.2.4.3}{Luminance Reduction}{subsection.2.4}% 11
+\BOOKMARK [2][-]{subsection.2.5}{Plot Creation}{section.2}% 12
+\BOOKMARK [3][-]{subsubsection.2.5.1}{Color Manipulations Plots}{subsection.2.5}% 13
+\BOOKMARK [3][-]{subsubsection.2.5.2}{Histogram Equalization Plots}{subsection.2.5}% 14
+\BOOKMARK [3][-]{subsubsection.2.5.3}{Luminance Reduction Plots}{subsection.2.5}% 15
+\BOOKMARK [3][-]{subsubsection.2.5.4}{Conclusions}{subsection.2.5}% 16
+\BOOKMARK [1][-]{section.3}{Part 2: Interfacing w/ an external OLED display | Image manipulation on-the-edge}{}% 17
+\BOOKMARK [2][-]{subsection.3.1}{The MATLAB Script}{section.3}% 18
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Image Manipulation Prior Transfer}{subsection.3.1}% 19
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Serial Communication}{subsection.3.1}% 20
+\BOOKMARK [2][-]{subsection.3.2}{The Arduino Program}{section.3}% 21
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Image Reception}{subsection.3.2}% 22
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Image Manipulation}{subsection.3.2}% 23
