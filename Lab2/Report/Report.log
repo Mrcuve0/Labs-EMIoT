@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.2.8)  21 FEB 2020 16:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.2.8)  27 FEB 2020 11:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -482,20 +482,20 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 ) (/home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.aux)
 \openout1 = `Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count287
@@ -637,7 +637,7 @@ File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box58
-Package hyperref Info: Link coloring OFF on input line 27.
+Package hyperref Info: Link coloring OFF on input line 29.
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -645,28 +645,28 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count293
 )
-LaTeX Info: Redefining \ref on input line 27.
-LaTeX Info: Redefining \pageref on input line 27.
-LaTeX Info: Redefining \nameref on input line 27.
+LaTeX Info: Redefining \ref on input line 29.
+LaTeX Info: Redefining \pageref on input line 29.
+LaTeX Info: Redefining \nameref on input line 29.
  (/home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.out) (/home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.out)
 \@outlinefile=\write4
 \openout4 = `Report.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 27.
+(Font)              <7> on input line 29.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 27.
+(Font)              <5> on input line 29.
 <PoliLogo.png, id=96, 1027.84pt x 1027.84pt>
 File: PoliLogo.png Graphic file (type png)
 <use PoliLogo.png>
-Package pdftex.def Info: PoliLogo.png  used on input line 35.
+Package pdftex.def Info: PoliLogo.png  used on input line 37.
 (pdftex.def)             Requested size: 73.36244pt x 73.35197pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 35.
+(Font)              <12> on input line 37.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 35.
+(Font)              <8> on input line 37.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 35.
+(Font)              <6> on input line 37.
  (/home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.toc
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 4.
  (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -675,110 +675,131 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 \tf@toc=\write5
 \openout5 = `Report.toc'.
 
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 49.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 51.
  (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 49.
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 62.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/sem/Desktop/EMIoT/Labs/Lab2/Report/PoliLogo.png>]
-<./screenshots/ColorReductionOverall.png, id=136, 1163.84813pt x 656.4525pt>
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 65.
+ [2]
+<./screenshots/im_15.png, id=147, 301.62688pt x 302.63063pt>
+File: ./screenshots/im_15.png Graphic file (type png)
+<use ./screenshots/im_15.png>
+Package pdftex.def Info: ./screenshots/im_15.png  used on input line 113.
+(pdftex.def)             Requested size: 97.81908pt x 98.14136pt.
+<./screenshots/img_17.png, id=148, 361.35pt x 225.84375pt>
+File: ./screenshots/img_17.png Graphic file (type png)
+<use ./screenshots/img_17.png>
+Package pdftex.def Info: ./screenshots/img_17.png  used on input line 119.
+(pdftex.def)             Requested size: 146.73235pt x 91.70743pt.
+
+Overfull \hbox (5.92685pt too wide) in paragraph at lines 141--155
+ [] 
+ []
+
+[3 <./screenshots/im_15.png> <./screenshots/img_17.png>]
+Overfull \hbox (29.92099pt too wide) in paragraph at lines 197--211
+ [] 
+ []
+
+[4]
+<./screenshots/ColorReductionOverall.png, id=168, 1163.84813pt x 656.4525pt>
 File: ./screenshots/ColorReductionOverall.png Graphic file (type png)
 <use ./screenshots/ColorReductionOverall.png>
-Package pdftex.def Info: ./screenshots/ColorReductionOverall.png  used on input line 88.
+Package pdftex.def Info: ./screenshots/ColorReductionOverall.png  used on input line 221.
 (pdftex.def)             Requested size: 489.10287pt x 275.86844pt.
-<./screenshots/color_reduction_20perc_img_11.jpg, id=138, 594.72188pt x 260.47313pt>
+<./screenshots/color_reduction_20perc_img_11.jpg, id=170, 594.72188pt x 260.47313pt>
 File: ./screenshots/color_reduction_20perc_img_11.jpg Graphic file (type jpg)
 <use ./screenshots/color_reduction_20perc_img_11.jpg>
-Package pdftex.def Info: ./screenshots/color_reduction_20perc_img_11.jpg  used on input line 101.
+Package pdftex.def Info: ./screenshots/color_reduction_20perc_img_11.jpg  used on input line 234.
 (pdftex.def)             Requested size: 293.4647pt x 128.5272pt.
-<./screenshots/color_reduction_20perc_img_2.jpg, id=139, 590.95781pt x 252.945pt>
+<./screenshots/color_reduction_20perc_img_2.jpg, id=171, 590.95781pt x 252.945pt>
 File: ./screenshots/color_reduction_20perc_img_2.jpg Graphic file (type jpg)
 <use ./screenshots/color_reduction_20perc_img_2.jpg>
-Package pdftex.def Info: ./screenshots/color_reduction_20perc_img_2.jpg  used on input line 110.
+Package pdftex.def Info: ./screenshots/color_reduction_20perc_img_2.jpg  used on input line 243.
 (pdftex.def)             Requested size: 293.4647pt x 125.61148pt.
-<./screenshots/img2_EUCLvSSIM.png, id=141, 1215.03937pt x 460.72125pt>
+<./screenshots/img2_EUCLvSSIM.png, id=173, 1215.03937pt x 460.72125pt>
 File: ./screenshots/img2_EUCLvSSIM.png Graphic file (type png)
 <use ./screenshots/img2_EUCLvSSIM.png>
-Package pdftex.def Info: ./screenshots/img2_EUCLvSSIM.png  used on input line 121.
+Package pdftex.def Info: ./screenshots/img2_EUCLvSSIM.png  used on input line 254.
 (pdftex.def)             Requested size: 391.28378pt x 148.36177pt.
- [2] [3 <./screenshots/ColorReductionOverall.png (PNG copy)> <./screenshots/color_reduction_20perc_img_11.jpg> <./screenshots/color_reduction_20perc_img_2.jpg>]
-<./screenshots/HistEqOverall.png, id=164, 1046.40938pt x 562.35094pt>
+ [5] [6 <./screenshots/ColorReductionOverall.png (PNG copy)> <./screenshots/color_reduction_20perc_img_11.jpg> <./screenshots/color_reduction_20perc_img_2.jpg>]
+<./screenshots/HistEqOverall.png, id=189, 1046.40938pt x 562.35094pt>
 File: ./screenshots/HistEqOverall.png Graphic file (type png)
 <use ./screenshots/HistEqOverall.png>
-Package pdftex.def Info: ./screenshots/HistEqOverall.png  used on input line 139.
+Package pdftex.def Info: ./screenshots/HistEqOverall.png  used on input line 272.
 (pdftex.def)             Requested size: 391.28378pt x 210.27185pt.
- [4 <./screenshots/img2_EUCLvSSIM.png (PNG copy)> <./screenshots/HistEqOverall.png (PNG copy)>]
-<./screenshots/hist_equalization_RGB_img_2.png, id=172, 538.26094pt x 499.11469pt>
+<./screenshots/hist_equalization_RGB_img_2.png, id=191, 538.26094pt x 499.11469pt>
 File: ./screenshots/hist_equalization_RGB_img_2.png Graphic file (type png)
 <use ./screenshots/hist_equalization_RGB_img_2.png>
-Package pdftex.def Info: ./screenshots/hist_equalization_RGB_img_2.png  used on input line 151.
+Package pdftex.def Info: ./screenshots/hist_equalization_RGB_img_2.png  used on input line 284.
 (pdftex.def)             Requested size: 293.4647pt x 272.12253pt.
-<./screenshots/hist_equalization_RGB_img_13.png, id=174, 539.01375pt x 505.13719pt>
+ [7 <./screenshots/img2_EUCLvSSIM.png (PNG copy)> <./screenshots/HistEqOverall.png (PNG copy)>]
+<./screenshots/hist_equalization_RGB_img_13.png, id=200, 539.01375pt x 505.13719pt>
 File: ./screenshots/hist_equalization_RGB_img_13.png Graphic file (type png)
 <use ./screenshots/hist_equalization_RGB_img_13.png>
-Package pdftex.def Info: ./screenshots/hist_equalization_RGB_img_13.png  used on input line 162.
+Package pdftex.def Info: ./screenshots/hist_equalization_RGB_img_13.png  used on input line 295.
 (pdftex.def)             Requested size: 293.4647pt x 275.02069pt.
-<./screenshots/LuminanceReductionOverall.png, id=178, 1167.61218pt x 637.63219pt>
+<./screenshots/LuminanceReductionOverall.png, id=204, 1167.61218pt x 637.63219pt>
 File: ./screenshots/LuminanceReductionOverall.png Graphic file (type png)
 <use ./screenshots/LuminanceReductionOverall.png>
-Package pdftex.def Info: ./screenshots/LuminanceReductionOverall.png  used on input line 178.
+Package pdftex.def Info: ./screenshots/LuminanceReductionOverall.png  used on input line 311.
 (pdftex.def)             Requested size: 391.28378pt x 213.67863pt.
-<./screenshots/img11_COLvLUM.png, id=180, 1149.5447pt x 339.51843pt>
+<./screenshots/img11_COLvLUM.png, id=206, 1149.5447pt x 339.51843pt>
 File: ./screenshots/img11_COLvLUM.png Graphic file (type png)
 <use ./screenshots/img11_COLvLUM.png>
-Package pdftex.def Info: ./screenshots/img11_COLvLUM.png  used on input line 189.
+Package pdftex.def Info: ./screenshots/img11_COLvLUM.png  used on input line 322.
 (pdftex.def)             Requested size: 293.4647pt x 86.67189pt.
-<./screenshots/luminance_reduction_10perc_img_18.png, id=183, 531.48563pt x 308.65312pt>
+<./screenshots/luminance_reduction_10perc_img_18.png, id=209, 531.48563pt x 308.65312pt>
 File: ./screenshots/luminance_reduction_10perc_img_18.png Graphic file (type png)
 <use ./screenshots/luminance_reduction_10perc_img_18.png>
-Package pdftex.def Info: ./screenshots/luminance_reduction_10perc_img_18.png  used on input line 202.
+Package pdftex.def Info: ./screenshots/luminance_reduction_10perc_img_18.png  used on input line 335.
 (pdftex.def)             Requested size: 293.4647pt x 170.4285pt.
- [5 <./screenshots/hist_equalization_RGB_img_2.png (PNG copy)>] [6 <./screenshots/hist_equalization_RGB_img_13.png (PNG copy)> <./screenshots/LuminanceReductionOverall.png (PNG copy)> <./screenshots/img11_COLvLUM.png (PNG copy)>]
-<./screenshots/ImagePercSavingsBar_LUMRED_SSIM_img_18.jpg, id=197, 658.71094pt x 493.845pt>
+<./screenshots/ImagePercSavingsBar_LUMRED_SSIM_img_18.jpg, id=210, 658.71094pt x 493.845pt>
 File: ./screenshots/ImagePercSavingsBar_LUMRED_SSIM_img_18.jpg Graphic file (type jpg)
 <use ./screenshots/ImagePercSavingsBar_LUMRED_SSIM_img_18.jpg>
-Package pdftex.def Info: ./screenshots/ImagePercSavingsBar_LUMRED_SSIM_img_18.jpg  used on input line 211.
+Package pdftex.def Info: ./screenshots/ImagePercSavingsBar_LUMRED_SSIM_img_18.jpg  used on input line 344.
 (pdftex.def)             Requested size: 293.4647pt x 220.0203pt.
- [7 <./screenshots/luminance_reduction_10perc_img_18.png (PNG copy)> <./screenshots/ImagePercSavingsBar_LUMRED_SSIM_img_18.jpg>] [8]
-<./screenshots/OriginalImageArduino.jpg, id=212, 777.90625pt x 565.11125pt>
+ [8 <./screenshots/hist_equalization_RGB_img_2.png (PNG copy)>] [9 <./screenshots/hist_equalization_RGB_img_13.png (PNG copy)> <./screenshots/LuminanceReductionOverall.png (PNG copy)> <./screenshots/img11_COLvLUM.png (PNG copy)>] [10 <./screenshots/luminance_reduction_10perc_img_18.png (PNG copy)> <./screenshots/ImagePercSavingsBar_LUMRED_SSIM_img_18.jpg>] [11]
+<./screenshots/OriginalImageArduino.jpg, id=235, 777.90625pt x 565.11125pt>
 File: ./screenshots/OriginalImageArduino.jpg Graphic file (type jpg)
 <use ./screenshots/OriginalImageArduino.jpg>
-Package pdftex.def Info: ./screenshots/OriginalImageArduino.jpg  used on input line 288.
+Package pdftex.def Info: ./screenshots/OriginalImageArduino.jpg  used on input line 421.
 (pdftex.def)             Requested size: 195.63815pt x 142.1225pt.
- [9 <./screenshots/OriginalImageArduino.jpg>]
-<./screenshots/ColorReductionComparison.jpg, id=219, 714.67pt x 470.75874pt>
+ [12]
+<./screenshots/ColorReductionComparison.jpg, id=242, 714.67pt x 470.75874pt>
 File: ./screenshots/ColorReductionComparison.jpg Graphic file (type jpg)
 <use ./screenshots/ColorReductionComparison.jpg>
-Package pdftex.def Info: ./screenshots/ColorReductionComparison.jpg  used on input line 307.
+Package pdftex.def Info: ./screenshots/ColorReductionComparison.jpg  used on input line 440.
 (pdftex.def)             Requested size: 195.63815pt x 128.86644pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 314.
- [10 <./screenshots/ColorReductionComparison.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 314.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 447.
+ [13 <./screenshots/OriginalImageArduino.jpg> <./screenshots/ColorReductionComparison.jpg>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 447.
  (/home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 314.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 314.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 447.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 447.
 Package rerunfilecheck Info: File `Report.out' has not changed.
 (rerunfilecheck)             Checksum: F0627D646B4D2EB34B42A0028EE1C836;1782.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 314.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 447.
  ) 
 Here is how much of TeX's memory you used:
- 20287 strings out of 492167
- 381038 string characters out of 6131559
- 461888 words of memory out of 5000000
- 24439 multiletter control sequences out of 15000+600000
+ 20310 strings out of 492167
+ 381460 string characters out of 6131559
+ 464057 words of memory out of 5000000
+ 24455 multiletter control sequences out of 15000+600000
  544597 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,7n,67p,982b,754s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on /home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.pdf (10 pages, 3156613 bytes).
+ 44i,7n,67p,982b,782s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on /home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.pdf (13 pages, 4053533 bytes).
 PDF statistics:
- 280 PDF objects out of 1000 (max. 8388607)
- 237 compressed objects within 3 object streams
- 50 named destinations out of 1000 (max. 500000)
- 255 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 314 PDF objects out of 1000 (max. 8388607)
+ 262 compressed objects within 3 object streams
+ 55 named destinations out of 1000 (max. 500000)
+ 265 words of extra memory for PDF output out of 10000 (max. 10000000)
 

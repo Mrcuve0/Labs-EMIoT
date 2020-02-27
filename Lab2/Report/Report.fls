@@ -179,9 +179,16 @@ INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm
 OUTPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.toc
 INPUT /usr/share/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/share/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ectt1200.tfm
-INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/./screenshots/im_15.png
+INPUT ./screenshots/im_15.png
+INPUT ./screenshots/im_15.png
+INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/./screenshots/img_17.png
+INPUT ./screenshots/img_17.png
+INPUT ./screenshots/img_17.png
+INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecti1000.tfm
 INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/./screenshots/ColorReductionOverall.png
 INPUT ./screenshots/ColorReductionOverall.png
 INPUT ./screenshots/ColorReductionOverall.png
@@ -215,7 +222,6 @@ INPUT ./screenshots/luminance_reduction_10perc_img_18.png
 INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/./screenshots/ImagePercSavingsBar_LUMRED_SSIM_img_18.jpg
 INPUT ./screenshots/ImagePercSavingsBar_LUMRED_SSIM_img_18.jpg
 INPUT ./screenshots/ImagePercSavingsBar_LUMRED_SSIM_img_18.jpg
-INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecti1000.tfm
 INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/./screenshots/OriginalImageArduino.jpg
 INPUT ./screenshots/OriginalImageArduino.jpg
 INPUT ./screenshots/OriginalImageArduino.jpg
@@ -226,8 +232,11 @@ INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.aux
 INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.out
 INPUT /home/sem/Desktop/EMIoT/Labs/Lab2/Report/Report.out
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb

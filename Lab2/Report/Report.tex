@@ -19,10 +19,12 @@
     \usepackage[margin=0.75in,a4paper]{geometry} % decreases margins
     \usepackage[final]{hyperref} % adds hyper links inside the generated pdf file
     % \usepackage{minted}
-
+    \definecolor{g}{rgb}{0.0, 0.5, 0.0}
+    \definecolor{b}{rgb}{0.0, 0.0, 1.0}
     \newcommand{\polito }{\emph{Politecnico di Torino}}
     \newcommand{\oses}{\emph{Energy Management for IoT}}
-
+    \usepackage{booktabs}
+    \usepackage[table,xcdraw]{xcolor}
 
     \begin{document}
     \title{
@@ -58,24 +60,155 @@
 %  |_|   \__,_|_|   \__|  |_|
 %
 \section{Part 1: Image Manipulation | Distortion Estimation | Power Consumption}
+In the first part we will talk about how the changes made to the images have been implemented.
 
     \subsection{The \texttt{MATLAB} Script}
+    In the first part of the \texttt{Matlab} script \texttt{lab2.m} the images are collected in \texttt{original\_vector\_images} and also the lab color space version in \texttt{original\_vector\_images\_lab} useful for computing the Euclidean distance that we'll talk about later. In addition, the power cost is calculated using the \texttt{image\_power.m} function and collected in \texttt{original\_vector\_power}.
+    There are 20 images to process, 5 of which are screenshots.
+    The \texttt{Matlab} script is then subdivided according to the type of manipulation that has been made to the original images with the related calculations to calculate the distortion and power difference between the original and the modified image.
 
     \subsection{Power Consumption Estimation}
+    In order to calculate the power of the image it is necessary to compute and sum the power of the single pixel plus the baseline power. The power of the single pixel is
+        $P_{pixel}(R,G,B)= w_r*R^\gamma+ w_g*G^\gamma + w_b*B^\gamma$ where RGB are the values of the single color channel in the pixel which emphasizes the fact that energy is color-dependent. The following coefficients are used that refer to a specific OLED display.
+    \begin{Verbatim}[commandchars=\\\{\}]
+        \textcolor{g}{% Power constants}
+        wr = 2.13636845e-7;
+        w0 = 1.48169521e-6;
+        wg = 1.77746705e-7;
+        wb = 2.14348309e-7;
+        gamma = 0.7755;
 
+    \end{Verbatim}
+    So at the end we can compute the total power using the following formula $P_{image}=w_o + \sum_{i=1}^N P_{pixel}(i)$
     \subsection{Distortion Estimation}
-
+    There are two ways to estimate image distortion. The distortion computation is based on numerical values but the distortion perceptible to the human eye is very different and difficult to evaluate. For example images can tolerate some approximations which are hardly visible, but but can improve the power saving.
         \subsubsection{Euclidean Distance}
+The Euclidean distance is computed for each pixel in the \texttt{LAB} space where $L$ is the luminance and $a$ and $b$ are two color channels, and corresponds to the difference of these components between the two images.
+In the \texttt{Matlab} function \texttt{eucl\_distance.m} receives the two images in the lab space and computes the Euclidean distance. This metric is based on luminance but also on colors.
+
+\begin{Verbatim} [commandchars=\\\{\}]
+
+    \textcolor{g}{ % Evaluating the distortion by computing the euclidean distance between pixels }
+
+    eps = 0;
+    \textcolor{b}{for} i = 1:n(1)
+        \textcolor{b}{for} j = 1:n(2)
+            eps = eps + sqrt( (L(i,j)-L2(i,j))^2 + (a(i,j)-a2(i,j))^2 + (b(i,j)-b2(i,j))^2 );
+        \textcolor{b}{end}
+    \textcolor{b}{end}
+
+\end{Verbatim}
 
         \subsubsection{SSIM}
+A very valid alterative is the computation of the Mean Structural Similarity Index (MSSIM). The calculation is already implemented in the \texttt{Matlab} \texttt{ssim()} function. As we will see later, it is the most faithful metric from the point of view of distortion perception.
 
     \subsection{Image Manipulations}
+        Here we will talk about the changes that have been made to the images and their results and considerations.
+        The result paragraph of each modification reports the results based on the image $\#15$ in figure \ref{fig:im15} and a screenshot (image $\#17$) in figure \ref{fig:im17} to get an idea of the findings. The data collected in the tables of results are the power saving value and, as parameter to evaluate the visual distortion of the image, we have chosen to show the MSSIM values.
+
+        We have to keep in mind that each image has its own characteristics and that the results can also be very different.
+
+        \begin{figure}[htp]
+            \centering
+            \includegraphics[width=0.2\columnwidth]{./screenshots/im_15.png}
+            \caption{\label{fig:im15}\centering Demo image $\#15$}
+        \end{figure}
+
+       \begin{figure}[htp]
+            \centering
+            \includegraphics[width=0.3\columnwidth]{./screenshots/img_17.png}
+            \caption{\label{fig:im17}\centering Screenshot image $\#17$}
+        \end{figure}
+
+
         \subsubsection{Colors Manipulation}
+        The first manipulation that has been done is specifically on colors. Manipulating colors is the same as backlight dimming in transmissive displays, so in OLED emissive devices we try to reduce display consumption by using the dependency of energy on color values.
+        The reduction was made in such a way that there was a gradual distortion of the color. This basically means reducing the color value of each pixel by an increasing percentage. It was implemented by iterating 10 to 100 percent color reduction on all three RGB values of each pixel. For each image and for each percentage the Euclidean distance, MSSIM and energy saving are estimated and collected. In the function \texttt{color\_reduction.m} we call the function \texttt{single\_color\_reduction.m} for each color. Inside this last function the reduction to be applied is proportional to the maximum value of the color and applied to the channel as shown in the following code.
+        \begin{Verbatim}[commandchars=\\\{\}]
+    \textcolor{g}{% reduction => 255 : 100 = x : perc_reduction }
+    reduction = (perc_reduction * 255) / 100;
+    \textcolor{b}{for} i = 1:n(1)
+        \textcolor{b}{for} j = 1:n(2)
+            I_d(i, j, channel) = I(i, j, channel) - reduction;
+        \textcolor{b}{end}
+    \textcolor{b}{end}
+        \end{Verbatim}
             \paragraph{Results}
+            Color reduction is a pixel-wise transformation strategy that has a great impact on energy. As we can see from the data collected already with a $20\%$ of color reduction has a good margin of power saving for most of the images.
+            The results are as we expected, i.e. a reduction in colour has certainly had an impact on energy savings at the expense of the similarity between the original and the modified image, which is darker and obviously different as the savings increase.
+
+            \begin{center}
+            \begin{tabular}{@{}lllll@{}}
+            \toprule
+{\color[HTML]{000000} Color reduction percentage} & {\color[HTML]{000000} im\#15 power saving \%} & im\#15 ssim \% & {\color[HTML]{000000} im\#17 power saving  \%} & im\#17 ssim \% \\ \midrule
+10                                                & 13.0                                          & 96.4           & 24.5                                           & 88.6           \\
+20                                                & 27.5                                          & 86.6           & 49.8                                           & 56.7           \\
+30                                                & 40.9                                          & 73.1           & 68.8                                           & 32.3           \\
+40                                                & 54.5                                          & 55.6           & 81.6                                           & 17.7           \\
+50                                                & 67.0                                          & 37.8           & 89.6                                           & 8.7            \\
+60                                                & 79.3                                          & 21.2           & 94.4                                           & 4.0            \\
+70                                                & 89.7                                          & 9.0            & 96.4                                           & 2.1            \\
+80                                                & 97.7                                          & 1.2            & 98.0                                           & 0.8            \\
+90                                                & 99.9                                          & 0.0            & 99.2                                           & 0.2            \\
+100                                               & 99.9                                          & 0.0            & 99.9                                           & 0.0            \\ \bottomrule
+\end{tabular}
+\end{center}
+
         \subsubsection{Histogram Equalization}
-            \paragraph{Results}
+        Histogram equalization is not pixel-wise transformation but rather about brightness/contrast modifications (hence, related to the overall image). For this reason it is necessary to switch to HSV space: here we modify only the third element (called \emph{Value}), that is associated to the brightness of the image, implemented as in the following code.
+        \begin{verbatim}
+        HSV_img = rgb2hsv(original_vector_images{i});
+        temp = HSV_img(:, :, 3);
+        HSV_img_histeq = histeq(temp);
+        HSV_mod = HSV_img;
+        HSV_mod(:, :, 3) = HSV_img_histeq;
+        \end{verbatim}
+        It is very important to remember that after histogram equalization the returned HSV values are, even after completing the reverse transformation into the RGB space, between 0 and 1. Hence, for the purpose of power saving calculations and distortion evaluation parameters it is necessary to transform this values of type \texttt{double} into \texttt{integer} and this is possible through the function Matlab \texttt{im2uint8()}.
+
+        \paragraph{Results}
+        The images resulting from histogram equalization are for the most part convenient from the point of view of power saving with very high similarity.
+        Images for which the energy saving is negative, on the other hand, mainly concern images already dark at the beginning where the contrast has been increased and for this reason they are brighter and therefore consume more.
+        The images $\#15$ and $\#17$ chosen as a sample are a perfect example because they behave in a diametrically opposed way.
+        These considerations can be referred also to the figure \ref{fig:HistEqOverall}.
+        \begin{center}
+        \begin{tabular}{lll}
+        Hist equalization & Power saving \% & MSSIM \% \\ \hline
+        Image 15          & 22.4            & 68.78    \\
+        Image 17          & -11.0           & 85.41    \\ \hline
+        \end{tabular}
+        \end{center}
         \subsubsection{Luminance Reduction}
-            \paragraph{Results}
+        As an optional transformation we have chosen to use a luminance transformation in the HSV space via the function we have implemented in \texttt{luminance\_reduction.m}.
+        The function is so implemented:
+        \begin{verbatim}
+        reduction = alpha / 100;
+        HSV_img_reduced = HSV_img;
+        HSV_img_reduced(:, :, 3) = HSV_img(:, :, 3) - reduction;
+        \end{verbatim}
+        Where alpha is iterated from 10 to 100 percentage for all images as we did for color reduction.
+        Alpha is then divided by 100 as the values in the HSV space range from 0 to 1.
+        Therefore also here we have to go back to integer values after the transformation and return in the RGB space.
+        Luminance reduction is an approach that we wanted to analyze because we can experience it every day with our mobile phones when we lower or increase the brightness of the phone display. Therefore, it is interesting to see the related effects on energy saving.
+        \paragraph{Results}
+        Working only on luminance is not very efficient in terms of image distortion, as it becomes very dark even at low percentages, very similar to the results of color reduction approach. However, the best compromise we can see is that with a $10\%$ reduction we can have positive power saving percentages and an acceptable similarity.
+
+
+        \begin{center}
+\begin{tabular}{@{}lllll@{}}
+\toprule
+{\color[HTML]{000000} Luminance reduction percentage} & im\#15 power saving  \% & im\#15 ssim \%            & im\#17 power saving \% & im\#17 ssim \% \\ \midrule
+10                                                    & 11.5                    & 96.9 & 19.4                   & 90.5           \\
+20                                                    & 23.7                    & 87.3                      & 41.2                   & 59.9           \\
+30                                                    & 35.8                    & 73.6                      & 61.4                   & 33.8           \\
+40                                                    & 48.4                    & 55.8                      & 74.8                   & 19.2           \\
+50                                                    & 61.2                    & 37.2                      & 84.5                   & 9.9            \\
+60                                                    & 74.2                    & 20.4                      & 92.8                   & 4.7            \\
+70                                                    & 86.2                    & 8.7                       & 95.2                   & 2.5            \\
+80                                                    & 95.9                    & 1.7                       & 97.3                   & 1.0            \\
+90                                                    & 99.9                    & 0.0                       & 99.0                   & 0.2            \\
+100                                                   & 99.9                    & 0.0                       & 99.9                   & 0.0            \\ \bottomrule
+\end{tabular}
+\end{center}
 
     \subsection{Plot Creation}
         In order to quantitatively compare the results obtained with the different manipulations, considering all the images in our possession, we decided to automatically build some comparisons plots that could clearly help us defining some tradeoffs.
@@ -217,10 +350,10 @@
 
         \subsubsection{Conclusions}
         All the results obtained allow us to define some basic approaches to image manipulation. For example, we can infer that the color reduction technique cannot always be applied to all images: some images (like the one depicted in figure (\ref{fig:color_reduction_20perc_img_2})) suffer from distortion even if affected by small manipulations.
-        
+
         In general, all of the three techniques we tested cannot be applied by default on all images without exploring the tradeoffs and evaluating carefully the results obtained image-per-image. Some of them provide in fact very good results on some images while very poor on other ones.
         Hence, it is not possible to define a "golden" manipulation technique able to return good results on the power consumption domain and poor image distortion for all the images.
-        
+
         If we consider the Color Reduction technique, a good policy will evaluate carefully the original image power consumption (tightly related to the overall darkness of an image), defining a threshold that, if surpassed, will resort to the application of the technique. Hence, images like image \#1 and \#2 will be kept in their original form, meanwhile images like image \#9 will be color reduced.
 
         A similar approach can be taken also considering the histogram equalization: from our experiments it is clear that static images like the screenshots obtained from our PC will suffer from a heavily degraded image quality if the equalization is applied. Histogram Equalization is better suited for photos and videos, where the overall image does not have an intrinsic "flat" or "unbalanced" histogram. Hence, we can apply some sort of filtering of the input image to avoid to apply this transformations to images we know in advance will be too distorted or will lead to an increased power consumption.
