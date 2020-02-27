@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.2.8)  26 FEB 2020 21:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.2.8)  27 FEB 2020 17:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -648,6 +648,7 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 27.
 LaTeX Info: Redefining \pageref on input line 27.
 LaTeX Info: Redefining \nameref on input line 27.
+ (/home/sem/Desktop/EMIoT/Labs/Lab3/Report/Report.out) (/home/sem/Desktop/EMIoT/Labs/Lab3/Report/Report.out)
 \@outlinefile=\write4
 \openout4 = `Report.out'.
 
@@ -655,7 +656,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 27.
-<PoliLogo.png, id=4, 1027.84pt x 1027.84pt>
+<PoliLogo.png, id=36, 1027.84pt x 1027.84pt>
 File: PoliLogo.png Graphic file (type png)
 <use PoliLogo.png>
 Package pdftex.def Info: PoliLogo.png  used on input line 35.
@@ -666,305 +667,89 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 35.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 35.
+ (/home/sem/Desktop/EMIoT/Labs/Lab3/Report/Report.toc)
 \tf@toc=\write5
 \openout5 = `Report.toc'.
 
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 49.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 52.
  (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 49.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 62.
- (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 62.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 52.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/sem/Desktop/EMIoT/Labs/Lab3/Report/PoliLogo.png>]
 
-LaTeX Warning: Reference `fig:ColorReductionOverall' on page 2 undefined on input line 84.
-
-
-LaTeX Warning: Reference `fig:color_reduction_20perc_img_2' on page 2 undefined on input line 84.
-
-
-/home/sem/Desktop/EMIoT/Labs/Lab3/Report/Report.tex:88: LaTeX Error: File `./screenshots/ColorReductionOverall' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.88 ...idth]{./screenshots/ColorReductionOverall}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `fig:color_reduction_20perc_img_11' on page 2 undefined on input line 97.
-
-
-LaTeX Warning: File `./screenshots/color_reduction_20perc_img_11.jpg' not found on input line 101.
-
-
-/home/sem/Desktop/EMIoT/Labs/Lab3/Report/Report.tex:101: Package pdftex.def Error: File `"./screenshots/""color_reduction_20perc_img_11".jpg' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.101 ...nshots/color_reduction_20perc_img_11.jpg}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `./screenshots/color_reduction_20perc_img_2.jpg' not found on input line 110.
-
-
-/home/sem/Desktop/EMIoT/Labs/Lab3/Report/Report.tex:110: Package pdftex.def Error: File `"./screenshots/""color_reduction_20perc_img_2".jpg' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.110 ...enshots/color_reduction_20perc_img_2.jpg}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `fig:img2_EUCLvSSIM' on page 2 undefined on input line 117.
-
-
-LaTeX Warning: File `./screenshots/img2_EUCLvSSIM.png' not found on input line 121.
-
-
-/home/sem/Desktop/EMIoT/Labs/Lab3/Report/Report.tex:121: Package pdftex.def Error: File `"./screenshots/""img2_EUCLvSSIM".png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.121 ...nwidth]{./screenshots/img2_EUCLvSSIM.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `fig:color_reduction_20perc_img_2' on page 2 undefined on input line 128.
-
-[2] [3] [4]
-
-LaTeX Warning: Reference `fig:HistEqOverall' on page 5 undefined on input line 134.
-
-
-/home/sem/Desktop/EMIoT/Labs/Lab3/Report/Report.tex:139: LaTeX Error: File `./screenshots/HistEqOverall' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.139 ...columnwidth]{./screenshots/HistEqOverall}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `fig:hist_equalization_RGB_img_2' on page 5 undefined on input line 147.
-
-
-/home/sem/Desktop/EMIoT/Labs/Lab3/Report/Report.tex:151: LaTeX Error: File `./screenshots/hist_equalization_RGB_img_2' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.151 .../screenshots/hist_equalization_RGB_img_2}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `fig:hist_equalization_RGB_img_13' on page 5 undefined on input line 158.
-
-
-/home/sem/Desktop/EMIoT/Labs/Lab3/Report/Report.tex:162: LaTeX Error: File `./screenshots/hist_equalization_RGB_img_13' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.162 ...screenshots/hist_equalization_RGB_img_13}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `fig:LuminanceReductionOverall' on page 5 undefined on input line 172.
-
-
-LaTeX Warning: Reference `fig:ColorReductionOverall' on page 5 undefined on input line 174.
-
-
-LaTeX Warning: Reference `fig:LuminanceReductionOverall' on page 5 undefined on input line 174.
-
-
-/home/sem/Desktop/EMIoT/Labs/Lab3/Report/Report.tex:178: LaTeX Error: File `./screenshots/LuminanceReductionOverall' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.178 ...{./screenshots/LuminanceReductionOverall}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `fig:img11_COLvLUM' on page 5 undefined on input line 185.
-
-[5]
-
-/home/sem/Desktop/EMIoT/Labs/Lab3/Report/Report.tex:189: LaTeX Error: File `./screenshots/img11_COLvLUM' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.189 ...columnwidth]{./screenshots/img11_COLvLUM}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `fig:luminance_reduction_10perc_img_18' on page 6 undefined on input line 196.
-
-
-LaTeX Warning: Reference `fig:ImagePercSavingsBar_LUMRED_SSIM_img_18' on page 6 undefined on input line 196.
-
-
-/home/sem/Desktop/EMIoT/Labs/Lab3/Report/Report.tex:202: LaTeX Error: File `./screenshots/luminance_reduction_10perc_img_18' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.202 ...nshots/luminance_reduction_10perc_img_18}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/sem/Desktop/EMIoT/Labs/Lab3/Report/Report.tex:211: LaTeX Error: File `./screenshots/ImagePercSavingsBar_LUMRED_SSIM_img_18' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.211 ...s/ImagePercSavingsBar_LUMRED_SSIM_img_18}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `fig:luminance_reduction_10perc_img_18' on page 6 undefined on input line 215.
-
-
-LaTeX Warning: Reference `fig:luminance_reduction_10perc_img_18' on page 6 undefined on input line 215.
-
-
-LaTeX Warning: Reference `fig:color_reduction_20perc_img_2' on page 6 undefined on input line 219.
-
-[6] [7]
-
-LaTeX Warning: Reference `fig:OriginalImageArduino' on page 8 undefined on input line 284.
-
-
-/home/sem/Desktop/EMIoT/Labs/Lab3/Report/Report.tex:288: LaTeX Error: File `./screenshots/OriginalImageArduino' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.288 ...idth]{./screenshots/OriginalImageArduino}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `fig:ColorReductionComparison' on page 8 undefined on input line 302.
-
-
-/home/sem/Desktop/EMIoT/Labs/Lab3/Report/Report.tex:307: LaTeX Error: File `./screenshots/ColorReductionComparison' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.307 ...]{./screenshots/ColorReductionComparison}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 314.
-[8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 314.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 76.
+
+[2]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 114.
+ (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+<./screenshots/SeqActiv/2Minutes/SeqLoadAndTOTPowerCurrent.png, id=79, 774.64406pt x 721.94719pt>
+File: ./screenshots/SeqActiv/2Minutes/SeqLoadAndTOTPowerCurrent.png Graphic file (type png)
+<use ./screenshots/SeqActiv/2Minutes/SeqLoadAndTOTPowerCurrent.png>
+Package pdftex.def Info: ./screenshots/SeqActiv/2Minutes/SeqLoadAndTOTPowerCurrent.png  used on input line 118.
+(pdftex.def)             Requested size: 489.10287pt x 455.83159pt.
+<./screenshots/SeqActiv/2Minutes/BattV-BattSoC-isDischargedV.png, id=80, 988.44281pt x 711.4078pt>
+File: ./screenshots/SeqActiv/2Minutes/BattV-BattSoC-isDischargedV.png Graphic file (type png)
+<use ./screenshots/SeqActiv/2Minutes/BattV-BattSoC-isDischargedV.png>
+Package pdftex.def Info: ./screenshots/SeqActiv/2Minutes/BattV-BattSoC-isDischargedV.png  used on input line 127.
+(pdftex.def)             Requested size: 391.28378pt x 281.61632pt.
+<./screenshots/SeqActiv/2Minutes/PVTotPower-Currents.png, id=81, 1008.76875pt x 730.22812pt>
+File: ./screenshots/SeqActiv/2Minutes/PVTotPower-Currents.png Graphic file (type png)
+<use ./screenshots/SeqActiv/2Minutes/PVTotPower-Currents.png>
+Package pdftex.def Info: ./screenshots/SeqActiv/2Minutes/PVTotPower-Currents.png  used on input line 136.
+(pdftex.def)             Requested size: 489.10287pt x 354.04878pt.
+ [3 <./screenshots/SeqActiv/2Minutes/SeqLoadAndTOTPowerCurrent.png (PNG copy)>]
+<./screenshots/ParActiv/2Minutes/ParLoadAndTOTPowerCurrent.png, id=91, 790.45313pt x 721.19438pt>
+File: ./screenshots/ParActiv/2Minutes/ParLoadAndTOTPowerCurrent.png Graphic file (type png)
+<use ./screenshots/ParActiv/2Minutes/ParLoadAndTOTPowerCurrent.png>
+Package pdftex.def Info: ./screenshots/ParActiv/2Minutes/ParLoadAndTOTPowerCurrent.png  used on input line 156.
+(pdftex.def)             Requested size: 489.10287pt x 446.25554pt.
+<./screenshots/ParActiv/2Minutes/BattV-BattSoC-isDischargedV.png, id=92, 947.03813pt x 721.19438pt>
+File: ./screenshots/ParActiv/2Minutes/BattV-BattSoC-isDischargedV.png Graphic file (type png)
+<use ./screenshots/ParActiv/2Minutes/BattV-BattSoC-isDischargedV.png>
+Package pdftex.def Info: ./screenshots/ParActiv/2Minutes/BattV-BattSoC-isDischargedV.png  used on input line 165.
+(pdftex.def)             Requested size: 391.28378pt x 297.96954pt.
+<./screenshots/ParActiv/2Minutes/PVTotPower-Currents.png, id=93, 948.54375pt x 722.7pt>
+File: ./screenshots/ParActiv/2Minutes/PVTotPower-Currents.png Graphic file (type png)
+<use ./screenshots/ParActiv/2Minutes/PVTotPower-Currents.png>
+Package pdftex.def Info: ./screenshots/ParActiv/2Minutes/PVTotPower-Currents.png  used on input line 174.
+(pdftex.def)             Requested size: 489.10287pt x 372.6523pt.
+ [4 <./screenshots/SeqActiv/2Minutes/BattV-BattSoC-isDischargedV.png (PNG copy)>] [5 <./screenshots/SeqActiv/2Minutes/PVTotPower-Currents.png (PNG copy)>] [6 <./screenshots/ParActiv/2Minutes/ParLoadAndTOTPowerCurrent.png (PNG copy)>]
+<./screenshots/SmartActiv/2Minutes/SmartLoadAndTOTPowerCurrent.png, id=108, 928.97063pt x 721.19438pt>
+File: ./screenshots/SmartActiv/2Minutes/SmartLoadAndTOTPowerCurrent.png Graphic file (type png)
+<use ./screenshots/SmartActiv/2Minutes/SmartLoadAndTOTPowerCurrent.png>
+Package pdftex.def Info: ./screenshots/SmartActiv/2Minutes/SmartLoadAndTOTPowerCurrent.png  used on input line 216.
+(pdftex.def)             Requested size: 489.10287pt x 379.71117pt.
+ [7 <./screenshots/ParActiv/2Minutes/BattV-BattSoC-isDischargedV.png (PNG copy)>] [8 <./screenshots/ParActiv/2Minutes/PVTotPower-Currents.png (PNG copy)>] [9 <./screenshots/SmartActiv/2Minutes/SmartLoadAndTOTPowerCurrent.png (PNG copy)>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 239.
+ [10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 239.
  (/home/sem/Desktop/EMIoT/Labs/Lab3/Report/Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 314.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 314.
-
-
-Package rerunfilecheck Warning: File `Report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Report.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  F0627D646B4D2EB34B42A0028EE1C836;1782.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 314.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 239.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 239.
+Package rerunfilecheck Info: File `Report.out' has not changed.
+(rerunfilecheck)             Checksum: D6C2EDB16863CACF01FCE578193B74A4;537.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 239.
  ) 
 Here is how much of TeX's memory you used:
- 20331 strings out of 492167
- 383318 string characters out of 6131559
- 457816 words of memory out of 5000000
- 24480 multiletter control sequences out of 15000+600000
- 544597 words of font info for 55 fonts, out of 8000000 for 9000
+ 20188 strings out of 492167
+ 378578 string characters out of 6131559
+ 459102 words of memory out of 5000000
+ 24365 multiletter control sequences out of 15000+600000
+ 544284 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,7n,67p,982b,729s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on /home/sem/Desktop/EMIoT/Labs/Lab3/Report/Report.pdf (8 pages, 450379 bytes).
+ 44i,9n,67p,1380b,731s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on /home/sem/Desktop/EMIoT/Labs/Lab3/Report/Report.pdf (10 pages, 1070344 bytes).
 PDF statistics:
- 145 PDF objects out of 1000 (max. 8388607)
- 119 compressed objects within 2 object streams
- 48 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 175 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 

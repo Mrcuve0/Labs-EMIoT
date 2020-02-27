@@ -9,7 +9,7 @@ transmit_time = 24;
 mc_time = 6; 
 
 % activation delay
-% setting 1: parallel exec - 581894 sec
+% setting 1: parallel exec - 586229 sec
 % air_delay = 0; 
 % methane_delay = 0; 
 % temp_delay = 0; 
@@ -17,15 +17,15 @@ mc_time = 6;
 % mc_delay = 30; 
 % transmit_delay = mc_delay + mc_time;
 
-% setting 2: serial exec - 581903 sec
-air_delay = 0; % first to execute
-methane_delay = air_time; % second to execute
-temp_delay = methane_delay + methane_time; % third to execute
-mic_delay = temp_delay + temp_time; % fourth to execute
-mc_delay = mic_delay + mic_time; % fifth to execute
-transmit_delay = mc_delay + mc_time; % sixth to execute
+% setting 2: serial exec - 588361 sec
+% air_delay = 0; % first to execute
+% methane_delay = air_time; % second to execute
+% temp_delay = methane_delay + methane_time; % third to execute
+% mic_delay = temp_delay + temp_time; % fourth to execute
+% mc_delay = mic_delay + mic_time; % fifth to execute
+% transmit_delay = mc_delay + mc_time; % sixth to execute
 
-% setting 2: 581910 sec
+% setting 3: 588360 sec
 % air_delay = 0; % first to execute
 % methane_delay = air_time; % second to execute
 % temp_delay = air_time+mic_time; % third to execute
@@ -33,7 +33,7 @@ transmit_delay = mc_delay + mc_time; % sixth to execute
 % mc_delay = air_time + methane_time; % fifth to execute
 % transmit_delay = mc_delay + mc_time; % sixth to execute
 
-% setting 2: 581911 sec
+% setting 4: 588291 sec
 methane_delay = 0; % first to execute
 air_delay = methane_time; % second to execute
 temp_delay = methane_time-mic_time-temp_time; % third to execute
