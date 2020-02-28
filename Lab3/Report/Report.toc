@@ -3,7 +3,9 @@
 \contentsline {section}{\numberline {2}Manipulating the system's workload}{1}{section.2}% 
 \contentsline {subsection}{\numberline {2.1}Sensors and Actuators characteristics}{2}{subsection.2.1}% 
 \contentsline {subsection}{\numberline {2.2}Sequential Workload}{2}{subsection.2.2}% 
-\contentsline {subsection}{\numberline {2.3}Parallel Workload}{3}{subsection.2.3}% 
+\contentsline {subsection}{\numberline {2.3}Parallel Workload}{4}{subsection.2.3}% 
 \contentsline {subsection}{\numberline {2.4}Custom Solutions}{4}{subsection.2.4}% 
-\contentsline {subsubsection}{\numberline {2.4.1}Comments}{7}{subsubsection.2.4.1}% 
+\contentsline {subsubsection}{\numberline {2.4.1}Comments}{10}{subsubsection.2.4.1}% 
 \contentsline {section}{\numberline {3}System modifications and additions}{10}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Modifications done to the system}{10}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Results and conclusions}{11}{subsection.3.2}% 

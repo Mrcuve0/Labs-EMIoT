@@ -26,10 +26,10 @@
 
     \begin{document}
     \title{
-        Energy Management for IoT - Report Lab 02 \\[0.5cm]
+        Energy Management for IoT - Report Lab 03 \\[0.5cm]
         \includegraphics[width=0.15\textwidth]{PoliLogo.png}%
     }
-    \author{Flavia Caforio (s257750) - Samuele Yves Cerini (s256813)}
+    \author{Samuele Yves Cerini (s256813)}
     \date{\today}
     \maketitle
 
@@ -235,5 +235,77 @@
 %  |_|   \__,_|_|   \__| |____|
 %                              
 \section{System modifications and additions}
+    This second part of the laboratory requests to modify the system in order to reach an even higher battery lifetime, following these guidelines that refer to a good IoT device design:
+    \begin{itemize}
+        \item an IoT device should be autonomous as much as possible;
+        \item an IoT device should not require frequent battery changes;
+    \end{itemize}
+
+    Of course, each modification done to the system comes to a cost (in both the economic term and in the total area/weight domain). Hence, some tradeoff evaluation must be taken into account. Given the requests of the lab, we as designers have the following possibilities:
+    \begin{itemize}
+        \item Activate the heaviest sensor less frequently (i.e with a longer period);
+        \item Increase the photovoltaic power production (one PV panel costs $\$5.50$);
+        \item Increase the battery capacity (one battery costs $\$4.99$);
+        \item Other ideas;
+    \end{itemize}
+
+    Also, we have to take in mind the cost that each addition brings: the budget dedicated to additions is equal to $\$11.00$.
     
+    The following considerations and hypothesis have been taken into consideration and lead to the results I will illustrate in the following sections.
+    The slower pace activation of the heaviest sensor in terms of power consumption (in this case, the Air Quality sensor) heavily depends on the application domain: some applications may not allow such solution to be taken into consideration since such a system may simply fall out of scope and become useless. In our case I decided to test two solutions: one with an activation period for the Air Quality sensor of 2 minutes (like before) and one with an activation period of 6 minutes.
+    Considering the possibility to add a photovoltaic panel we must take in mind the overall external environment conditions (are we installing our IoT device in a position with very good irradiance or not? Will the addition of our panel be worth?). Also, some constraints like the area required and the transportability of the device may arise, depending once again on the application constraints.
+    Finally, considering the addition of a battery pack, once again we must face the issues related to the final weight of the IoT device. Also, if the power consumption is high, placing a secondary battery in parallel to the original one may only double (in a best case scenario) the overall lifetime of the device, which however may still be not sufficient.
+
+    \subsection{Modifications done to the system}
+        My choices were mainly driven by the considerations I made by observing the results obtained with the previous tests. I also assumed an activation period of 2 minutes as fixed and mandatory (since the system was proven behaving really well with a period of 10 minutes, being of no use for educational purposes). Finally, by observing the previous graphs like (\ref{fig:PVTotPower-Currents} and \ref{fig:ParPVTotPower-Currents}), I was led to the conclusion that the addition of a secondary battery in parallel (increasing the overall capacity) would not have been enough to keep the system alive, especially considering the rate of discharge (current drained from the battery) proven in those graphs.
+        Hence, I decided to add only a secondary photovoltaic module in parallel to the system, along with a secondary DCDC converter (so as to avoid a parameter drifting and a complete re-design of the entire PVmodule+DCDCconverter subsystem, which already proven to be on-point in terms of overall efficiency). 
+        Thus, I assumed that the provided photovoltaic panel includes a DCDC converter, as we can see in some solutions available on the market.
+        This addition required also the addition of a second "port" in the \emph{DCBus} component, as we can see in the following figures (\ref{fig:DCBus} and \ref{fig:ModelOverall}).
+
+        \begin{figure}[htp]
+            \centering
+            \includegraphics[width=0.6 \columnwidth]{./screenshots/SecondPart/2Minutes/Gmonth/ModelOverall.png}
+            \caption{
+                    \label{fig:ModelOverall}
+                    In this figure we can appreciate the modifications made to the overall module, especially the Photovoltaic Cell and the DCDC converters. Both PV panels are affected by the same irradiance (Gmonth).
+            }
+        \end{figure}
+
+        \begin{figure}[htp]
+            \centering
+            \includegraphics[width=0.6 \columnwidth]{./screenshots/SecondPart/2Minutes/Gmonth/DCBus.png}
+            \caption{
+                    \label{fig:DCBus}
+                    This figure shows the modifications made to the \emph{DCBus} component of the overall model: a secondary "port" as been added to connect the \emph{DCBus} to the current and voltage values coming from the second couple of PV panel and DCDC converters. The power components provided by the two subsystems are then summed together.
+            }
+        \end{figure}
+
+    \subsection{Results and conclusions}
+        I tested the system using the \texttt{Gmonths} data table (containing an irradiance trace up to 3 months).
+        The system simulation stopped after 4229041 seconds, equal to 48 days, 22 hours and 44 minutes.
+        
+        These results proved the correctness of the original assumption, proving the efficacy of the presence of an additional PV panel in order to reduce the overall energy directly drained from the battery, hence heavily increasing the lifetime of the IoT device.
+        Please refer to figures (\ref{fig:BattV-BattSoC-isDischargedV} and \ref{fig:PVTotPower-Currents_Overall}) for additional considerations.
+
+        Finally, the second modification to the system, the one that includes the secondary PV panel and executes the Air Quality load every 6 minutes (activation period equal to 6 minutes) was able to simulate through the entire 3 months-long simulation. Sadly, I could not be able to include any figure or proof of this solution in this report since \emph{Matlab/Simulink} kept crashing once the simulation terminated, not allowing me to open the inspector.
+
+        \begin{figure}[htp]
+            \centering
+            \includegraphics[width=0.8 \columnwidth]{./screenshots/SecondPart/2Minutes/Gmonths/PVTotPower-Currents_Overall.png}
+            \caption{
+                    \label{fig:PVTotPower-Currents_Overall}
+                    This figure shows, for the entire simulation length, the values associated to the current drained from the battery (\texttt{Battery Current}), the power produced by one PV panel (the same for both PV panels since they share the same irradiance values) and the current provided by a single PV panel (\texttt{PV Current} and \texttt{PV DCDC Current}) (since we have now 2 panels, the final current is double the value represented in the graph).
+            }
+        \end{figure}
+
+        \begin{figure}[htp]
+            \centering
+            \includegraphics[width=0.8 \columnwidth]{./screenshots/SecondPart/2Minutes/Gmonths/BattV-BattSoC-isDischargedV.png}
+            \caption{
+                    \label{fig:BattV-BattSoC-isDischargedV}
+                    This figure shows, for the entire simulation length, the battery State of Charge and Voltage. As we can see, the addition of a secondary PV panel allows to recharge more significantly the battery and significantly increases the lifetime of the system. However, once again, the system is considered to be "dead" not because of the low value of the State of Charge, but due to the low value of the overall voltage provided by the battery, as clearly visible in the bottom part of the graph.
+            }
+        \end{figure}
+
+
 \end{document}
